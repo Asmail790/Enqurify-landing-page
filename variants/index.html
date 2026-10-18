@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquirify — theme variants</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap");
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 56px 24px;
+      background: #f7f6f3; color: #1c1a17;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    h1 { font-family: "Space Grotesk", sans-serif; font-size: 34px; letter-spacing: -0.03em; margin: 0 0 8px; }
+    p.lede { color: #6b655c; margin: 0 0 36px; max-width: 60ch; }
+    ul { list-style: none; padding: 0; display: grid; gap: 14px; }
+    a.card {
+      display: flex; align-items: center; gap: 18px;
+      padding: 18px 20px; background: #fff; border: 1px solid #e7e2d8; border-radius: 14px;
+      color: inherit; text-decoration: none; transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    a.card:hover { border-color: #c9c1b2; transform: translateY(-2px); }
+    .swatches { display: flex; gap: 4px; flex: 0 0 auto; }
+    .swatches span { width: 18px; height: 34px; border-radius: 4px; display: block; border: 1px solid rgba(28, 26, 23, 0.12); }
+    .meta strong { display: block; font-size: 15px; }
+    .meta span { display: block; font-size: 13px; color: #6b655c; }
+    .num { margin-left: auto; font-family: "Space Grotesk", sans-serif; color: #b3aa9b; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Enquirify — theme variants</h1>
+    <p class="lede">Seven directions for the same page. Each folder contains <code>src/index.html</code> and <code>src/input.css</code>; open the HTML file directly in a browser.</p>
+
+    <ul>
+      <li>
+        <a class="card" href="./01-always-on-signal/src/index.html">
+          <span class="swatches">
+            <span style="background:#070a14"></span><span style="background:#6366f1"></span><span style="background:#34d399"></span>
+          </span>
+          <span class="meta"><strong>01 · Always-on signal</strong><span>Deep navy, indigo and mint. Reliability and uptime, dark by default.</span></span>
+          <span class="num">01</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./02-human-handoff/src/index.html">
+          <span class="swatches">
+            <span style="background:#faf6f0"></span><span style="background:#c2643f"></span><span style="background:#7c9070"></span>
+          </span>
+          <span class="meta"><strong>02 · Human handoff</strong><span>Cream, clay and sage with a serif voice. AI that still feels like a person.</span></span>
+          <span class="num">02</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./03-control-room/src/index.html">
+          <span class="swatches">
+            <span style="background:#0a0a0a"></span><span style="background:#d4ff3f"></span><span style="background:#262626"></span>
+          </span>
+          <span class="meta"><strong>03 · Control room</strong><span>Near-black, lime and mono type. A queue dashboard that feels operational.</span></span>
+          <span class="num">03</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./04-night-shift/src/index.html">
+          <span class="swatches">
+            <span style="background:#05060f"></span><span style="background:#8b5cf6"></span><span style="background:#22d3ee"></span>
+          </span>
+          <span class="meta"><strong>04 · Night shift</strong><span>Midnight gradients and glass cards. "Answers at 2am like it's 2pm."</span></span>
+          <span class="num">04</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./05-retro-telecom/src/index.html">
+          <span class="swatches">
+            <span style="background:#f6efe3"></span><span style="background:#d1332e"></span><span style="background:#231d18"></span>
+          </span>
+          <span class="meta"><strong>05 · Retro telecom</strong><span>Cream paper, ink and telephone red. A switchboard you can trust.</span></span>
+          <span class="num">05</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./06-editorial/src/index.html">
+          <span class="swatches">
+            <span style="background:#fbfaf7"></span><span style="background:#191817"></span><span style="background:#c2410c"></span>
+          </span>
+          <span class="meta"><strong>06 · Conversation-first editorial</strong><span>Paper, charcoal and serif. The transcript is the hero.</span></span>
+          <span class="num">06</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="./07-playful-assistant/src/index.html">
+          <span class="swatches">
+            <span style="background:#f7f5ff"></span><span style="background:#6d4aff"></span><span style="background:#ffd166"></span>
+          </span>
+          <span class="meta"><strong>07 · Playful assistant</strong><span>Indigo, teal and sun yellow with rounded type. Friendly and low-friction.</span></span>
+          <span class="num">07</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
