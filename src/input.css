@@ -198,16 +198,6 @@
     border: 1px solid var(--color-border-subtle);
   }
 
-  /* ===== dotted backdrop ===== */
-  .dot-grid {
-    background-image: radial-gradient(
-      circle,
-      var(--color-border) 1.5px,
-      transparent 1.5px
-    );
-    background-size: 18px 18px;
-  }
-
   /* ===== pills / badges ===== */
   .chip {
     display: inline-flex;
@@ -263,36 +253,6 @@
     border-radius: 9999px;
     background: var(--color-fg-disabled);
     animation: var(--animate-typing-bounce);
-  }
-
-  /* ===== process steps ===== */
-  .step-line {
-    position: absolute;
-    top: 1.5rem;
-    left: 8%;
-    right: 8%;
-    height: 2px;
-    background: repeating-linear-gradient(
-      to right,
-      var(--color-border-brand) 0 8px,
-      transparent 8px 16px
-    );
-    z-index: 0;
-  }
-  .step-circle {
-    position: relative;
-    z-index: 10;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 9999px;
-    background: var(--color-surface);
-    border: 2px solid var(--color-border-brand);
-    color: var(--color-fg-brand);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
   }
 
   /* ===== FAQ accordion ===== */
