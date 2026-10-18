@@ -248,19 +248,6 @@
     transform: scale(1.12) rotate(-4deg);
   }
 
-  /* ===== support icon (SVG file as a mask, tinted by a bg-* utility) ===== */
-  .support-icon {
-    display: block;
-    -webkit-mask-image: url("./assets/svg/customer-service-icon.svg");
-    mask-image: url("./assets/svg/customer-service-icon.svg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-  }
-
   /* ===== voice waveform ===== */
   .wave-bar {
     width: 4px;

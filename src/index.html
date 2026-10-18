@@ -87,7 +87,7 @@
     <div class="fade-in show">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand mb-3 tracking-wide leading-tight">AI CUSTOMER SUPPORT FOR BUSINESSES</p>
       <h1 class="text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-balance">
-        AI powered customer support that answers every call, chat and enquiry
+        Customer support that answers every call, chat and enquiry
         <span class="relative inline-block grad-text">
           24/7.
           <span class="absolute left-0 -bottom-2 h-1.5 w-full bg-fg-brand" aria-hidden="true"></span>
@@ -123,7 +123,21 @@
 
     <!-- RIGHT ICON -->
     <div class="fade-in show flex items-center justify-center">
-      <span class="support-icon w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-primary" role="img" aria-label="Customer support agent wearing a headset"></span>
+      <svg class="w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 text-primary" viewBox="0 0 240 240" fill="none" role="img" aria-label="AI assistant robot">
+        <!-- antenna -->
+        <circle cx="120" cy="28" r="10" fill="currentColor" />
+        <rect x="115" y="38" width="10" height="24" fill="currentColor" />
+        <!-- side ears -->
+        <rect x="36" y="94" width="16" height="36" rx="8" fill="currentColor" />
+        <rect x="188" y="94" width="16" height="36" rx="8" fill="currentColor" />
+        <!-- head -->
+        <rect x="54" y="60" width="132" height="104" rx="30" stroke="currentColor" stroke-width="12" />
+        <!-- eyes -->
+        <circle cx="98" cy="104" r="11" fill="currentColor" />
+        <circle cx="142" cy="104" r="11" fill="currentColor" />
+        <!-- mouth -->
+        <rect x="96" y="130" width="48" height="9" rx="4.5" fill="currentColor" />
+      </svg>
     </div>
     </div>
   </div>
@@ -140,11 +154,117 @@
       <h2 class="text-xl md:text-2xl font-bold mb-4">Everything you need to convert more customers</h2>
       <p class="text-fg-muted text-lg">Built for digital, shopfront and, owner-operated businesses that cannot afford to miss a customer.</p>
 
-      <div class="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-fg-subtle">
-        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-fg-brand" aria-hidden="true"></i> No setup hassle</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-fg-brand" aria-hidden="true"></i> Calls, chats and forms covered</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-fg-brand" aria-hidden="true"></i> No extra support staff</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-fg-brand" aria-hidden="true"></i> Always open</span>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="mb-24 md:mb-28 fade-in">
+      <div class="card overflow-hidden">
+
+        <!-- app bar -->
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border-subtle px-5 py-3">
+          <div class="flex items-center gap-2">
+            <img src="./assets/imgs/logo.png" alt="" draggable="false" class="h-5 w-auto" />
+            <span class="text-sm font-semibold">Enquirify</span>
+            <span class="hidden sm:inline-flex chip bg-surface-selected text-fg-brand">Dashboard</span>
+          </div>
+
+          <div class="hidden md:flex items-center gap-1 text-xs font-medium">
+            <span class="px-3 py-1.5 rounded-md bg-surface-subtle text-fg">Overview</span>
+            <span class="px-3 py-1.5 rounded-md text-fg-subtle">Enquiries</span>
+            <span class="px-3 py-1.5 rounded-md text-fg-subtle">Bookings</span>
+            <span class="px-3 py-1.5 rounded-md text-fg-subtle">Settings</span>
+          </div>
+
+          <span class="chip bg-bg-success text-fg-success"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Live</span>
+        </div>
+
+        <!-- KPI row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-border-subtle border-b border-border-subtle">
+          <div class="bg-surface px-5 py-4">
+            <p class="text-xs text-fg-subtle">Enquiries today</p>
+            <p class="mt-1 text-2xl font-bold tabular-nums">128</p>
+            <p class="mt-0.5 text-xs font-semibold text-fg-success">+18% vs yesterday</p>
+          </div>
+          <div class="bg-surface px-5 py-4">
+            <p class="text-xs text-fg-subtle">Answered</p>
+            <p class="mt-1 text-2xl font-bold tabular-nums">100%</p>
+            <p class="mt-0.5 text-xs font-semibold text-fg-success">0 missed</p>
+          </div>
+          <div class="bg-surface px-5 py-4">
+            <p class="text-xs text-fg-subtle">Booked</p>
+            <p class="mt-1 text-2xl font-bold tabular-nums">46</p>
+            <p class="mt-0.5 text-xs font-semibold text-fg-success">+9 today</p>
+          </div>
+          <div class="bg-surface px-5 py-4">
+            <p class="text-xs text-fg-subtle">Avg. first reply</p>
+            <p class="mt-1 text-2xl font-bold tabular-nums">6s</p>
+            <p class="mt-0.5 text-xs font-semibold text-fg-success">under 10s</p>
+          </div>
+        </div>
+
+        <!-- chart + latest enquiries -->
+        <div class="grid lg:grid-cols-3 gap-px bg-border-subtle">
+          <div class="bg-surface p-5 lg:col-span-2">
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <p class="text-sm font-semibold">Enquiries this week</p>
+              <span class="text-xs text-fg-subtle">Mon – Sun</span>
+            </div>
+
+            <div class="flex items-end gap-2 sm:gap-3 h-32 sm:h-40" role="img" aria-label="Bar chart of enquiries per day, peaking on Friday with 88">
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 42%"></div>
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 58%"></div>
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 36%"></div>
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 72%"></div>
+              <div class="flex-1 rounded-t bg-primary" style="height: 88%"></div>
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 64%"></div>
+              <div class="flex-1 rounded-t bg-primary/20" style="height: 51%"></div>
+            </div>
+
+            <div class="mt-2 flex gap-2 sm:gap-3 text-[10px] text-fg-subtle" aria-hidden="true">
+              <span class="flex-1 text-center">Mon</span>
+              <span class="flex-1 text-center">Tue</span>
+              <span class="flex-1 text-center">Wed</span>
+              <span class="flex-1 text-center">Thu</span>
+              <span class="flex-1 text-center">Fri</span>
+              <span class="flex-1 text-center">Sat</span>
+              <span class="flex-1 text-center">Sun</span>
+            </div>
+          </div>
+
+          <div class="bg-surface p-5">
+            <p class="text-sm font-semibold mb-4">Latest enquiries</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center justify-between gap-3">
+                <span class="flex items-center gap-2 min-w-0">
+                  <span class="w-7 h-7 shrink-0 rounded-full bg-surface-selected text-fg-brand grid place-items-center text-[10px] font-bold">PS</span>
+                  <span class="truncate">Priya Shah</span>
+                </span>
+                <span class="chip bg-bg-success text-fg-success">Booked</span>
+              </li>
+              <li class="flex items-center justify-between gap-3">
+                <span class="flex items-center gap-2 min-w-0">
+                  <span class="w-7 h-7 shrink-0 rounded-full bg-surface-selected text-fg-brand grid place-items-center text-[10px] font-bold">TW</span>
+                  <span class="truncate">Tom Whitfield</span>
+                </span>
+                <span class="chip bg-bg-success text-fg-success">Booked</span>
+              </li>
+              <li class="flex items-center justify-between gap-3">
+                <span class="flex items-center gap-2 min-w-0">
+                  <span class="w-7 h-7 shrink-0 rounded-full bg-surface-selected text-fg-brand grid place-items-center text-[10px] font-bold">AR</span>
+                  <span class="truncate">Aisha Rahman</span>
+                </span>
+                <span class="chip bg-surface-selected text-fg-brand">New</span>
+              </li>
+              <li class="flex items-center justify-between gap-3">
+                <span class="flex items-center gap-2 min-w-0">
+                  <span class="w-7 h-7 shrink-0 rounded-full bg-surface-selected text-fg-brand grid place-items-center text-[10px] font-bold">DO</span>
+                  <span class="truncate">Daniel O'Connor</span>
+                </span>
+                <span class="chip bg-surface-subtle text-fg-muted">Callback</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
