@@ -36,67 +36,91 @@
       <span>Enquirify</span>
     </a>
 
-    <div class="hidden md:flex items-center gap-6 text-sm">
-      <a href="#products" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Features</a>
-      <a href="#pricing" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Pricing</a>
-      <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Login</a>
+    <div class="hidden xl:flex items-center gap-5 text-sm text-gray-600 dark:text-gray-300">
+      <a href="#products" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Our platform</a>
+      <a href="#smart-features" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Smart features</a>
+      <a href="#how-it-works" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">How it works</a>
+      <a href="#reviews" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Reviews</a>
+      <a href="#savings" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">The numbers</a>
+      <a href="#integrations" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Integrations</a>
+      <a href="#pricing" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Pricing</a>
+      <a href="#faq" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">FAQ</a>
+      <a href="#contact" class="whitespace-nowrap hover:text-indigo-600 dark:hover:text-indigo-400 transition">Book a demo</a>
     </div>
 
     <div class="flex items-center gap-2">
+      <a href="#contact" class="hidden xl:inline-flex items-center px-4 py-2 rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:border-indigo-300 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Login</a>
+
       <button id="theme-toggle" type="button" class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-300" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle dark mode">
         <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
       </button>
 
-      <button id="mobile-menu-btn" type="button" class="md:hidden w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="mobile-menu-btn" type="button" class="xl:hidden w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 px-6 py-4">
+  <div id="mobile-menu" class="hidden xl:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 px-6 py-4">
     <div class="flex flex-col gap-4 text-sm">
-      <a href="#products" class="hover:text-indigo-600 dark:hover:text-indigo-400">Features</a>
+      <a href="#products" class="hover:text-indigo-600 dark:hover:text-indigo-400">Our platform</a>
+      <a href="#smart-features" class="hover:text-indigo-600 dark:hover:text-indigo-400">Smart features</a>
+      <a href="#how-it-works" class="hover:text-indigo-600 dark:hover:text-indigo-400">How it works</a>
+      <a href="#reviews" class="hover:text-indigo-600 dark:hover:text-indigo-400">Reviews</a>
+      <a href="#savings" class="hover:text-indigo-600 dark:hover:text-indigo-400">The numbers</a>
+      <a href="#integrations" class="hover:text-indigo-600 dark:hover:text-indigo-400">Integrations</a>
       <a href="#pricing" class="hover:text-indigo-600 dark:hover:text-indigo-400">Pricing</a>
-      <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400">Login</a>
+      <a href="#faq" class="hover:text-indigo-600 dark:hover:text-indigo-400">FAQ</a>
+      <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400">Book a demo</a>
+
+      <a href="#contact" class="mt-1 text-center px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-indigo-300 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Login</a>
     </div>
   </div>
 </nav>
+
 
 <!-- HERO -->
 <section class="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-950 dark:via-gray-950 dark:to-gray-900">
   <div class="blob -top-32 -left-32 w-96 h-96 bg-indigo-200 dark:bg-indigo-900/50"></div>
   <div class="blob blob-b -bottom-32 -right-32 w-96 h-96 bg-purple-200 dark:bg-purple-900/40"></div>
 
-  <div class="relative max-w-7xl mx-auto px-6 pt-16 md:pt-20 pb-20 md:pb-24 grid md:grid-cols-2 gap-14 md:gap-16 items-center">
+  <div class="relative max-w-7xl mx-auto px-6 pt-16 md:pt-20 pb-20 md:pb-24">
+
+    <!-- HEADLINE -->
+    <div class="fade-in show">
+      <p class="text-xs font-semibold text-indigo-600 mb-3 tracking-wide">AI CUSTOMER SUPPORT FOR BUSINESSES</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-balance">
+        AI powered customer support that answers every call, chat and enquiry
+        <span class="relative inline-block grad-text">
+          24/7.
+          <svg class="absolute left-0 -bottom-2 w-full" height="10" viewBox="0 0 220 10" preserveAspectRatio="none" aria-hidden="true">
+            <path class="squiggle" d="M2,7 C40,2 80,9 120,5 C160,1 190,8 218,4" fill="none" stroke="#9333EA" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </span>
+      </h1>
+    </div>
+
+    <div class="mt-10 md:mt-14 grid md:grid-cols-2 gap-14 md:gap-16 items-center">
 
     <!-- LEFT -->
     <div class="fade-in show space-y-8">
-      <div>
-        <p class="text-xs font-semibold text-indigo-600 mb-3 tracking-wide">AI CUSTOMER SUPPORT FOR BUSINESSES</p>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-          AI that answers every call, chat and enquiry.
-          <span class="relative inline-block grad-text">
-            24/7.
-            <svg class="absolute left-0 -bottom-2 w-full" height="10" viewBox="0 0 220 10" preserveAspectRatio="none" aria-hidden="true">
-              <path class="squiggle" d="M2,7 C40,2 80,9 120,5 C160,1 190,8 218,4" fill="none" stroke="#9333EA" stroke-width="3" stroke-linecap="round" />
-            </svg>
-          </span>
-        </h1>
-      </div>
-
       <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-xl">
         Enquirify is AI customer support for businesses. It answers phone calls, website chats and enquiry forms instantly, qualifies each customer and books the order — so you need no extra support staff, and your business stays open around the clock.
       </p>
 
-      <div class="flex flex-wrap gap-4">
-        <a href="#pricing" class="btn-glow px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-300">
+      <div class="flex flex-wrap gap-3">
+        <a href="#pricing" class="btn-glow px-4 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-300">
           Get started
         </a>
-        <a href="mailto:hello@enquirify.com" class="px-6 py-3 border border-indigo-200 bg-white text-indigo-700 rounded-xl font-semibold hover:border-indigo-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-indigo-500/40 dark:text-indigo-300 dark:hover:border-indigo-400">
+        <a href="#contact" class="px-4 py-3 border border-indigo-200 bg-white text-indigo-700 rounded-xl font-semibold hover:border-indigo-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-indigo-500/40 dark:text-indigo-300 dark:hover:border-indigo-400">
           Book a demo
         </a>
-        <a href="#how-it-works" class="px-6 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
+        <a href="#how-it-works" class="px-4 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
           See how it works
+        </a>
+        <a href="#reviews" class="inline-flex items-center gap-2 px-4 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
+          <i class="fa-solid fa-star text-amber-400 text-xs" aria-hidden="true"></i>
+          Reviews
         </a>
       </div>
     </div>
@@ -105,54 +129,93 @@
     <div class="fade-in show relative">
       <div class="absolute inset-0 bg-gradient-to-tr from-indigo-200 via-purple-200 to-transparent blur-3xl opacity-40 rounded-3xl"></div>
 
-      <!-- floating badges -->
-      <div class="float-badge absolute -top-5 -right-3 md:-right-5 z-10 bg-white dark:bg-gray-900 shadow-lg rounded-full pl-2 pr-4 py-2 flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-200">
-        <span class="icon-box w-7 h-7 bg-purple-100 text-purple-600 dark:bg-purple-500/15 dark:text-purple-300"><i class="fa-solid fa-bolt text-xs" aria-hidden="true"></i></span>
-        AI powered
-      </div>
-      <div class="float-badge delay absolute -bottom-5 -left-3 md:-left-5 z-10 bg-white dark:bg-gray-900 shadow-lg rounded-full pl-3 pr-4 py-2 flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-200">
-        <span class="relative flex h-2.5 w-2.5">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-        </span>
-        Live now
-      </div>
+      <div id="hero-carousel" class="relative" aria-roledescription="carousel" aria-label="Enquirify product preview">
+        <div class="grid">
 
-      <div class="lift relative surface p-7 hover:shadow-2xl">
-        <div class="flex items-center gap-3 mb-5">
-          <div class="relative icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300">
-            <span class="ping-ring"></span>
-            <i class="fa-solid fa-phone ring-shake relative" aria-hidden="true"></i>
+          <!-- SLIDE: ENQUIRIFY VOICE -->
+          <div data-hero-slide class="col-start-1 row-start-1 transition-opacity duration-700 opacity-100" aria-roledescription="slide" aria-label="Enquirify Voice">
+            <div class="lift surface p-7 hover:shadow-2xl">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="relative icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300">
+                  <span class="ping-ring"></span>
+                  <i class="fa-solid fa-phone ring-shake relative" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm">Enquirify Voice</p>
+                  <p class="text-xs text-gray-400 dark:text-gray-500">Incoming order call</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800/60 p-4 rounded-xl text-sm text-gray-600 dark:text-gray-300 mb-5">
+                "Hi, I'd like to place an order..."
+              </div>
+
+              <div class="space-y-3 mb-5">
+                <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .1s">
+                  <div class="icon-box w-8 h-8 bg-green-100 text-green-600 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-check text-xs" aria-hidden="true"></i></div>
+                  Payment processed
+                </div>
+                <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .3s">
+                  <div class="icon-box w-8 h-8 bg-green-100 text-green-600 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-check text-xs" aria-hidden="true"></i></div>
+                  Order confirmed
+                </div>
+                <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .5s">
+                  <div class="icon-box w-8 h-8 bg-purple-100 text-purple-600 dark:bg-purple-500/15 dark:text-purple-300"><i class="fa-solid fa-paper-plane text-xs" aria-hidden="true"></i></div>
+                  Sent to you
+                </div>
+              </div>
+
+              <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400 text-xs font-semibold px-3 py-1.5 rounded-full">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Hands-off order processing
+              </span>
+            </div>
           </div>
-          <div>
-            <p class="font-semibold text-sm">Incoming order call</p>
-            <p class="text-xs text-gray-400 dark:text-gray-500">Ringing now...</p>
+
+          <!-- SLIDE: ENQUIRIFY FORMS -->
+          <div data-hero-slide class="col-start-1 row-start-1 transition-opacity duration-700 opacity-0 pointer-events-none" aria-roledescription="slide" aria-label="Enquirify Forms" aria-hidden="true">
+            <div class="lift surface p-7 hover:shadow-2xl">
+              <div class="flex items-center justify-between gap-3 mb-5">
+                <div class="flex items-center gap-3">
+                  <div class="icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300">
+                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm">Enquirify Forms</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">New website enquiry</p>
+                  </div>
+                </div>
+                <span class="chip bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Live</span>
+              </div>
+
+              <div class="space-y-3 mb-5">
+                <div class="flex justify-start">
+                  <p class="max-w-[85%] bg-gray-50 dark:bg-gray-800/60 rounded-xl rounded-tl-none px-4 py-3 text-sm text-gray-600 dark:text-gray-300">Hi, can someone pop over tomorrow around 6pm to fix my car?</p>
+                </div>
+                <div class="flex justify-end">
+                  <p class="max-w-[85%] bg-indigo-50 dark:bg-indigo-500/15 rounded-xl rounded-tr-none px-4 py-3 text-sm text-gray-700 dark:text-gray-200">Of course — 6pm tomorrow works. Shall I book that in?</p>
+                </div>
+                <div class="flex justify-start">
+                  <p class="max-w-[85%] bg-gray-50 dark:bg-gray-800/60 rounded-xl rounded-tl-none px-4 py-3 text-sm text-gray-600 dark:text-gray-300">Yes please. Car reg is LX21 KFR.</p>
+                </div>
+              </div>
+
+              <div class="bg-white dark:bg-gray-900 border border-indigo-100 dark:border-indigo-500/30 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <p class="text-sm font-semibold">Enquiry converted</p>
+                  <p class="text-xs text-gray-400 dark:text-gray-500">Booked for tomorrow, 6:00pm.</p>
+                </div>
+                <span class="chip bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> Happy customer</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-gray-50 dark:bg-gray-800/60 p-4 rounded-xl text-sm text-gray-600 dark:text-gray-300 mb-5">
-          "Hi, I'd like to place an order..."
+        <div class="mt-5 flex items-center justify-center gap-4">
+          <button type="button" data-hero-dot aria-label="Show Enquirify Voice" aria-selected="true" class="relative w-4 h-4 rounded-full bg-indigo-600 dark:bg-indigo-400 transition-colors duration-300 after:absolute after:-inset-2.5 after:rounded-full after:content-['']"></button>
+          <button type="button" data-hero-dot aria-label="Show Enquirify Forms" aria-selected="false" class="relative w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-600 transition-colors duration-300 after:absolute after:-inset-2.5 after:rounded-full after:content-['']"></button>
         </div>
-
-        <div class="space-y-3 mb-5">
-          <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .1s">
-            <div class="icon-box w-8 h-8 bg-green-100 text-green-600 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-check text-xs" aria-hidden="true"></i></div>
-            Payment processed
-          </div>
-          <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .3s">
-            <div class="icon-box w-8 h-8 bg-green-100 text-green-600 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-check text-xs" aria-hidden="true"></i></div>
-            Order confirmed
-          </div>
-          <div class="stagger-in flex items-center gap-3 text-sm" style="animation-delay: .5s">
-            <div class="icon-box w-8 h-8 bg-purple-100 text-purple-600 dark:bg-purple-500/15 dark:text-purple-300"><i class="fa-solid fa-paper-plane text-xs" aria-hidden="true"></i></div>
-            Sent to you
-          </div>
-        </div>
-
-        <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400 text-xs font-semibold px-3 py-1.5 rounded-full">
-          <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Hands-off order processing
-        </span>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -165,7 +228,7 @@
     <p class="text-gray-600 dark:text-gray-400 text-lg">Built for digital, shopfront and, owner-operated businesses that cannot afford to miss a customer.</p>
 
     <div class="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400">
-      <span class="flex items-center gap-2"><i class="fa-solid fa-shield text-green-500" aria-hidden="true"></i> No setup hassle</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600" aria-hidden="true"></i> No setup hassle</span>
       <span class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600" aria-hidden="true"></i> Calls, chats and forms covered</span>
       <span class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600" aria-hidden="true"></i> No extra support staff</span>
       <span class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600" aria-hidden="true"></i> Always open</span>
@@ -193,11 +256,15 @@
 
       <div class="relative dot-grid rounded-3xl p-4 sm:p-8">
         <div class="lift surface p-5">
-          <div class="flex items-center gap-2 mb-4 pb-3 border-b border-gray-100 dark:border-gray-800">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-300"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-yellow-300"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-green-300"></span>
-            <span class="text-[11px] sm:text-xs text-gray-400 dark:text-gray-500 ml-2">CUSTOMER DASHBOARD - Enquirify Forms</span>
+          <div class="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-gray-100 dark:border-gray-800">
+            <div class="flex items-center gap-3">
+              <div class="icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+              <div>
+                <p class="text-sm font-semibold">Live chat</p>
+                <p class="text-xs text-gray-400 dark:text-gray-500">Customer dashboard</p>
+              </div>
+            </div>
+            <span class="chip bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Online</span>
           </div>
 
           <div class="flex items-start gap-3 mb-4">
@@ -413,6 +480,118 @@
       <p class="text-sm text-gray-600 dark:text-gray-400">Booked in and sent straight to your kitchen.</p>
     </div>
   </div>
+
+  <!-- DEMO -->
+  <div class="mt-16 md:mt-20 fade-in">
+    <div class="text-center max-w-2xl mx-auto mb-6">
+      <p class="text-xs font-semibold text-indigo-600 tracking-wide mb-2">TRY MICRO DEMO</p>
+      <h3 class="text-2xl md:text-3xl font-bold mb-2">See the agent answer for itself</h3>
+      <p class="text-gray-600 dark:text-gray-400">Voice plays a short scripted call, so you can watch the assistant greet the customer, take the order and confirm it. Forms lets you type your own question and see the reply come back. Both are small demos of the real thing — no data is sent and nothing is stored.</p>
+    </div>
+
+    <div class="flex justify-center mb-6">
+      <div class="inline-flex items-center gap-1 bg-gray-100 dark:bg-gray-900 rounded-xl p-1" role="tablist" aria-label="Choose a demo">
+        <button type="button" role="tab" id="demo-tab-voice" data-demo-tab="voice" aria-selected="true" aria-controls="demo-voice" class="px-4 py-2 rounded-lg text-sm font-semibold transition">
+          <i class="fa-solid fa-phone mr-2" aria-hidden="true"></i>Enquirify Voice
+        </button>
+        <button type="button" role="tab" id="demo-tab-forms" data-demo-tab="forms" aria-selected="false" aria-controls="demo-forms" class="px-4 py-2 rounded-lg text-sm font-semibold transition">
+          <i class="fa-solid fa-comment-dots mr-2" aria-hidden="true"></i>Enquirify Forms
+        </button>
+      </div>
+    </div>
+
+    <div class="relative dot-grid rounded-3xl p-4 sm:p-6 max-w-2xl mx-auto">
+
+      <!-- VOICE DEMO -->
+      <div id="demo-voice" role="tabpanel" aria-labelledby="demo-tab-voice" class="surface p-5 sm:p-6">
+        <div class="flex items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <div class="relative icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300">
+              <span class="ping-ring"></span>
+              <i class="fa-solid fa-phone ring-shake relative" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Enquirify Voice</p>
+              <p id="voice-status" class="text-xs text-gray-500 dark:text-gray-400">Ready to answer</p>
+            </div>
+          </div>
+          <span id="voice-timer" class="chip bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400 hidden">00:00</span>
+        </div>
+
+        <div class="flex items-end justify-center gap-1 h-10 mb-4" aria-hidden="true">
+          <span class="wave-bar" style="animation-delay: 0s"></span>
+          <span class="wave-bar" style="animation-delay: .1s"></span>
+          <span class="wave-bar" style="animation-delay: .2s"></span>
+          <span class="wave-bar" style="animation-delay: .3s"></span>
+          <span class="wave-bar" style="animation-delay: .4s"></span>
+          <span class="wave-bar" style="animation-delay: .3s"></span>
+          <span class="wave-bar" style="animation-delay: .2s"></span>
+          <span class="wave-bar" style="animation-delay: .1s"></span>
+        </div>
+
+        <div id="voice-log" class="space-y-2 min-h-[11rem] mb-4">
+          <p id="voice-hint" class="text-sm text-gray-400 dark:text-gray-500 text-center pt-8">Press “Start the call” to play the sample conversation.</p>
+
+          <div data-voice-line class="hidden flex justify-end">
+            <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-indigo-50 dark:bg-indigo-500/15 text-gray-700 dark:text-gray-200">Hi, are you open for collection tonight?</p>
+          </div>
+          <div data-voice-line class="hidden flex justify-start">
+            <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-gray-50 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300">We are — collection orders until 10pm. What can I get you?</p>
+          </div>
+          <div data-voice-line class="hidden flex justify-end">
+            <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-indigo-50 dark:bg-indigo-500/15 text-gray-700 dark:text-gray-200">One large pepperoni, please.</p>
+          </div>
+          <div data-voice-line class="hidden flex justify-start">
+            <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-gray-50 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300">Booked in for 8:30pm. I've texted the payment link — see you then!</p>
+          </div>
+        </div>
+
+        <button id="voice-start" type="button" class="w-full inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md hover:shadow-lg duration-300">
+          <i class="fa-solid fa-phone mr-2" aria-hidden="true"></i>Start the call
+        </button>
+      </div>
+
+      <!-- FORMS DEMO -->
+      <div id="demo-forms" role="tabpanel" aria-labelledby="demo-tab-forms" class="surface p-5 sm:p-6 hidden">
+        <div class="flex items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <div class="icon-box bg-purple-100 text-purple-600 dark:bg-purple-500/15 dark:text-purple-300">
+              <i class="fa-solid fa-comments" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Enquirify Forms</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">Always online</p>
+            </div>
+          </div>
+          <span class="chip bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-400"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Live</span>
+        </div>
+
+        <div id="forms-log" class="space-y-2 min-h-[11rem] max-h-64 overflow-y-auto mb-4 pr-1">
+          <div class="flex justify-start">
+            <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-gray-50 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300">Hi! Ask me about orders, bookings or opening hours.</p>
+          </div>
+        </div>
+
+        <form id="forms-input-form" class="flex gap-2">
+          <label for="forms-input" class="sr-only">Message</label>
+          <input id="forms-input" type="text" autocomplete="off" placeholder="Type a message…"
+            class="flex-1 px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/60 focus:border-transparent transition" />
+          <button type="submit" class="shrink-0 inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md duration-300" aria-label="Send message">
+            <i class="fa-solid fa-paper-plane text-sm" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <a href="#contact" class="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-300">
+        Book a demo
+      </a>
+      <a href="#pricing" class="px-6 py-3 border border-gray-200 bg-white dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 rounded-xl font-semibold hover:border-gray-300 dark:hover:border-gray-500 hover:-translate-y-0.5 transition duration-300">
+        Get started
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- TESTIMONIALS -->
@@ -565,13 +744,7 @@
     </div>
   </div>
 
-  <div class="text-center mt-10 fade-in">
-    <a href="#pricing" class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-300">
-      See what it costs
-      <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
-    </a>
-    <p class="text-[11px] text-gray-400 dark:text-gray-500 mt-6">Average results reported by Enquirify customers in their first six months.</p>
-  </div>
+ 
 </section>
 
 <!-- INTEGRATIONS -->
@@ -997,6 +1170,221 @@
       demoStatus.textContent =
         "Thanks! We'll call you on " + phone + " within one working day. A confirmation is on its way to " + email + ".";
     });
+  }
+
+  // ===== Voice / Forms sample widget =====
+  const demoTabs = document.querySelectorAll("[data-demo-tab]");
+  const demoPanels = {
+    voice: document.getElementById("demo-voice"),
+    forms: document.getElementById("demo-forms"),
+  };
+
+  function activateDemo(name) {
+    demoTabs.forEach((tab) => {
+      const active = tab.dataset.demoTab === name;
+      tab.setAttribute("aria-selected", String(active));
+      tab.classList.toggle("bg-white", active);
+      tab.classList.toggle("dark:bg-gray-800", active);
+      tab.classList.toggle("text-gray-900", active);
+      tab.classList.toggle("dark:text-white", active);
+      tab.classList.toggle("shadow-sm", active);
+      tab.classList.toggle("text-gray-500", !active);
+      tab.classList.toggle("dark:text-gray-400", !active);
+    });
+    Object.keys(demoPanels).forEach((key) => {
+      if (demoPanels[key]) demoPanels[key].classList.toggle("hidden", key !== name);
+    });
+  }
+
+  if (demoTabs.length) {
+    demoTabs.forEach((tab) => {
+      tab.addEventListener("click", () => activateDemo(tab.dataset.demoTab));
+    });
+    activateDemo("voice");
+  }
+
+  // Scripted call
+  const voiceStart = document.getElementById("voice-start");
+  const voiceStatus = document.getElementById("voice-status");
+  const voiceTimer = document.getElementById("voice-timer");
+  const voiceHint = document.getElementById("voice-hint");
+  const voiceLines = Array.from(document.querySelectorAll("[data-voice-line]"));
+  let voiceTimeouts = [];
+  let voiceInterval = null;
+
+  function resetVoice() {
+    voiceTimeouts.forEach(clearTimeout);
+    voiceTimeouts = [];
+    if (voiceInterval) {
+      clearInterval(voiceInterval);
+      voiceInterval = null;
+    }
+    voiceLines.forEach((line) => line.classList.add("hidden"));
+    if (voiceHint) voiceHint.classList.remove("hidden");
+    if (voiceStatus) voiceStatus.textContent = "Ready to answer";
+    if (voiceTimer) {
+      voiceTimer.classList.add("hidden");
+      voiceTimer.textContent = "00:00";
+    }
+    if (voiceStart) {
+      voiceStart.disabled = false;
+      voiceStart.innerHTML = '<i class="fa-solid fa-phone mr-2" aria-hidden="true"></i>Start the call';
+    }
+  }
+
+  if (voiceStart) {
+    resetVoice();
+    voiceStart.addEventListener("click", () => {
+      resetVoice();
+      voiceStart.disabled = true;
+      voiceStart.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin mr-2" aria-hidden="true"></i>On call…';
+      if (voiceHint) voiceHint.classList.add("hidden");
+      if (voiceStatus) voiceStatus.textContent = "On a call with a customer";
+      if (voiceTimer) voiceTimer.classList.remove("hidden");
+
+      const startedAt = Date.now();
+      voiceInterval = setInterval(() => {
+        if (!voiceTimer) return;
+        const seconds = Math.floor((Date.now() - startedAt) / 1000);
+        voiceTimer.textContent = "00:" + String(seconds).padStart(2, "0");
+      }, 1000);
+
+      voiceLines.forEach((line, index) => {
+        voiceTimeouts.push(setTimeout(() => line.classList.remove("hidden"), 400 + index * 1100));
+      });
+
+      voiceTimeouts.push(
+        setTimeout(() => {
+          if (voiceInterval) {
+            clearInterval(voiceInterval);
+            voiceInterval = null;
+          }
+          if (voiceStatus) voiceStatus.textContent = "Call ended — nothing missed, nothing on hold";
+          voiceStart.disabled = false;
+          voiceStart.innerHTML = '<i class="fa-solid fa-rotate-right mr-2" aria-hidden="true"></i>Call again';
+        }, 400 + voiceLines.length * 1100)
+      );
+    });
+  }
+
+  // Written sample chat
+  const formsInputForm = document.getElementById("forms-input-form");
+  const formsInput = document.getElementById("forms-input");
+  const formsLog = document.getElementById("forms-log");
+
+  const sampleReplies = [
+    { test: /(price|cost|much|plan)/i, reply: "Plans start at £79 a month with the full AI engine included. Would you like me to book a demo?" },
+    { test: /(book|appointment|reserve|table|collect|order)/i, reply: "Happy to book that in. What day and time suits you best?" },
+    { test: /(open|hour|close|time)/i, reply: "We answer around the clock — evenings, weekends and bank holidays included." },
+    { test: /(human|person|staff|call me)/i, reply: "Of course. I'll pass this to the team with the full conversation attached." },
+  ];
+
+  function addBubble(text, from) {
+    if (!formsLog) return;
+    const row = document.createElement("div");
+    row.className = "flex " + (from === "user" ? "justify-end" : "justify-start");
+    const bubble = document.createElement("p");
+    bubble.className =
+      "max-w-[85%] px-4 py-2.5 rounded-xl text-sm " +
+      (from === "user"
+        ? "bg-indigo-50 dark:bg-indigo-500/15 text-gray-700 dark:text-gray-200 rounded-tr-none"
+        : "bg-gray-50 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300 rounded-tl-none");
+    bubble.textContent = text;
+    row.appendChild(bubble);
+    formsLog.appendChild(row);
+    formsLog.scrollTop = formsLog.scrollHeight;
+    return row;
+  }
+
+  if (formsInputForm && formsInput && formsLog) {
+    formsInputForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const message = formsInput.value.trim();
+      if (!message) return;
+
+      addBubble(message, "user");
+      formsInput.value = "";
+
+      const typing = document.createElement("div");
+      typing.className = "flex justify-start";
+      typing.innerHTML =
+        '<div class="bg-gray-50 dark:bg-gray-800/60 rounded-xl rounded-tl-none px-4 py-3 flex gap-1 items-center">' +
+        '<span class="typing-dot"></span><span class="typing-dot" style="animation-delay:.15s"></span><span class="typing-dot" style="animation-delay:.3s"></span></div>';
+      formsLog.appendChild(typing);
+      formsLog.scrollTop = formsLog.scrollHeight;
+
+      const matched = sampleReplies.find((item) => item.test.test(message));
+      setTimeout(() => {
+        typing.remove();
+        addBubble(
+          matched ? matched.reply : "Thanks! I've logged that and can take the details to get it booked in. What's the best number to reach you on?",
+          "bot"
+        );
+      }, 900);
+    });
+  }
+
+  // ===== Hero preview carousel =====
+  const heroSlides = Array.from(document.querySelectorAll("[data-hero-slide]"));
+  const heroDots = Array.from(document.querySelectorAll("[data-hero-dot]"));
+  const heroCarousel = document.getElementById("hero-carousel");
+  const heroPrefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let heroIndex = 0;
+  let heroTimer = null;
+
+  function showHeroSlide(index) {
+    heroIndex = index;
+    heroSlides.forEach((slide, i) => {
+      const active = i === index;
+      slide.classList.toggle("opacity-100", active);
+      slide.classList.toggle("opacity-0", !active);
+      slide.classList.toggle("pointer-events-none", !active);
+      if (active) {
+        slide.removeAttribute("aria-hidden");
+      } else {
+        slide.setAttribute("aria-hidden", "true");
+      }
+    });
+    heroDots.forEach((dot, i) => {
+      const active = i === index;
+      dot.setAttribute("aria-selected", String(active));
+      dot.classList.toggle("bg-indigo-600", active);
+      dot.classList.toggle("dark:bg-indigo-400", active);
+      dot.classList.toggle("bg-gray-300", !active);
+      dot.classList.toggle("dark:bg-gray-600", !active);
+    });
+  }
+
+  function stopHeroCarousel() {
+    if (heroTimer) {
+      clearInterval(heroTimer);
+      heroTimer = null;
+    }
+  }
+
+  function startHeroCarousel() {
+    if (heroSlides.length < 2 || heroPrefersReducedMotion.matches) return;
+    stopHeroCarousel();
+    heroTimer = setInterval(() => showHeroSlide((heroIndex + 1) % heroSlides.length), 5000);
+  }
+
+  if (heroSlides.length > 1) {
+    showHeroSlide(0);
+    startHeroCarousel();
+
+    heroDots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        showHeroSlide(i);
+        startHeroCarousel();
+      });
+    });
+
+    if (heroCarousel) {
+      heroCarousel.addEventListener("mouseenter", stopHeroCarousel);
+      heroCarousel.addEventListener("mouseleave", startHeroCarousel);
+      heroCarousel.addEventListener("focusin", stopHeroCarousel);
+      heroCarousel.addEventListener("focusout", startHeroCarousel);
+    }
   }
 </script>
 
