@@ -115,8 +115,9 @@
         <a href="#contact" class="px-4 py-3 border border-indigo-200 bg-white text-indigo-700 rounded-xl font-semibold hover:border-indigo-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-indigo-500/40 dark:text-indigo-300 dark:hover:border-indigo-400">
           Book a demo
         </a>
-        <a href="#how-it-works" class="px-4 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
-          See how it works
+        <a href="#micro-demo" class="inline-flex items-center gap-2 px-4 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
+          <i class="fa-solid fa-circle-play text-indigo-600 dark:text-indigo-400 text-xs" aria-hidden="true"></i>
+          Try micro demo
         </a>
         <a href="#reviews" class="inline-flex items-center gap-2 px-4 py-3 border border-gray-200 bg-white rounded-xl font-semibold hover:border-gray-300 hover:-translate-y-0.5 transition duration-300 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-500">
           <i class="fa-solid fa-star text-amber-400 text-xs" aria-hidden="true"></i>
@@ -396,7 +397,42 @@
   </div>
 </section>
 
-<!-- WAVE: products -> smart features -->
+<!-- GUARDRAILS -->
+<section id="guardrails" class="max-w-6xl mx-auto px-6 py-20 md:py-24 scroll-mt-20">
+  <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14 fade-in">
+    <p class="text-xs font-semibold text-indigo-600 tracking-wide mb-3">GUARDRAILS</p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-balance">It knows what not to say</h2>
+    <p class="text-gray-600 dark:text-gray-400 text-lg">You set the rules once. Enquirify never invents a price, never promises what you don't offer, and always hands over when it should.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-3 gap-6 fade-in">
+    <div class="lift surface p-6">
+      <div class="icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300 mb-5"><i class="fa-solid fa-shield-halved icon-pop" aria-hidden="true"></i></div>
+      <h3 class="font-semibold mb-2">Never guesses a price</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">If a price isn't in your menu or services, it says so and takes a message for a callback.</p>
+    </div>
+
+    <div class="lift surface p-6">
+      <div class="icon-box bg-purple-100 text-purple-600 dark:bg-purple-500/15 dark:text-purple-300 mb-5"><i class="fa-solid fa-ban icon-pop" aria-hidden="true"></i></div>
+      <h3 class="font-semibold mb-2">Holds your line on discounts</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Rules like “no discounts over 10%” are enforced politely — on every single call.</p>
+    </div>
+
+    <div class="lift surface p-6">
+      <div class="icon-box bg-indigo-100 text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300 mb-5"><i class="fa-solid fa-phone-volume icon-pop" aria-hidden="true"></i></div>
+      <h3 class="font-semibold mb-2">Knows when to get you</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Angry or urgent callers are transferred straight to your mobile, with the context attached.</p>
+    </div>
+  </div>
+
+  <p class="mt-8 text-center fade-in">
+    <span class="inline-block max-w-2xl rounded-xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-100 dark:border-indigo-500/30 px-5 py-4 text-sm font-semibold text-indigo-900 dark:text-indigo-200">
+      If it doesn't know, it says so and takes a message. <span class="font-bold">It never guesses.</span>
+    </span>
+  </p>
+</section>
+
+<!-- WAVE: guardrails -> smart features -->
 <div class="bg-white dark:bg-gray-950 leading-none">
   <svg class="block w-full h-auto" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
     <path class="wave-to-muted" fill="#F9FAFB" d="M0,30 C360,60 1080,0 1440,25 L1440,60 L0,60 Z" />
@@ -482,7 +518,7 @@
   </div>
 
   <!-- DEMO -->
-  <div class="mt-16 md:mt-20 fade-in">
+  <div id="micro-demo" class="mt-16 md:mt-20 fade-in scroll-mt-24">
     <div class="text-center max-w-2xl mx-auto mb-6">
       <p class="text-xs font-semibold text-indigo-600 tracking-wide mb-2">TRY MICRO DEMO</p>
       <h3 class="text-2xl md:text-3xl font-bold mb-2">See the agent answer for itself</h3>

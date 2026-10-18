@@ -1,3 +1,7 @@
+# The Question 
+What makes a landing page stand out personalize the product? If want to create AI powered customer support product how can make it unique. My target group is small bussiness with little techinal skills. 
+
+
 # Landing Page Personalization & Unique Product Strategy for Non-Technical SMBs
 
 To stand out in the crowded AI customer support space—especially when targeting non-technical small business owners (contractors, local salons, medical clinics, boutique shops)—your landing page and product strategy must solve **fear, complexity, and distrust**.
