@@ -545,27 +545,27 @@
             </div>
 
             <div id="voice-preview-log" class="flex flex-col gap-2 mb-4">
-              <div class="flex justify-end">
+              <div data-voice-msg class="flex justify-end transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">Thanks for calling Spice Lane — how can I help?</p>
               </div>
-              <div class="flex justify-start">
+              <div data-voice-msg class="flex justify-start transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">Hi, are you open for collection tonight?</p>
               </div>
-              <div class="flex justify-end">
+              <div data-voice-msg class="flex justify-end transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">We are — orders until 10pm. What can I get you?</p>
               </div>
-              <div class="flex justify-start">
+              <div data-voice-msg class="flex justify-start transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">One large pepperoni, please.</p>
               </div>
-              <div class="flex justify-end">
+              <div data-voice-msg class="flex justify-end transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">Booked for 8:30pm. I've texted the payment link — see you then!</p>
               </div>
-              <div class="flex justify-start">
+              <div data-voice-msg class="flex justify-start transition-all duration-500">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">Perfect, thanks.</p>
               </div>
             </div>
 
-            <div data-voice-done class="bg-surface border border-border-brand rounded-sm p-4 flex flex-wrap items-center justify-between gap-3">
+            <div data-voice-done class="bg-surface border border-border-brand rounded-sm p-4 flex flex-wrap items-center justify-between gap-3 transition-opacity duration-500">
               <div>
                 <p class="text-sm font-semibold">Enquiry converted</p>
                 <p class="text-xs text-fg-subtle">Booked for 8:30pm collection — payment link sent.</p>
@@ -1751,6 +1751,40 @@
         }
       })();
     }
+  }
+
+  // ===== Voice card reveal =====
+  const voiceDonePanel = document.querySelector("[data-voice-done]");
+  const voiceMsgs = Array.from(document.querySelectorAll("[data-voice-msg]"));
+  const voicePreviewStatus = document.getElementById("voice-preview-status");
+  const voiceCardReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (voiceDonePanel && voiceMsgs.length && !voiceCardReduced) {
+    voiceMsgs.forEach((msg) => msg.classList.add("opacity-0", "translate-y-1"));
+    voiceDonePanel.classList.add("opacity-0");
+    if (voicePreviewStatus) voicePreviewStatus.textContent = "Caller is speaking…";
+
+    const playVoiceCard = async () => {
+      for (const msg of voiceMsgs) {
+        msg.classList.remove("opacity-0", "translate-y-1");
+        await new Promise((resolve) => setTimeout(resolve, 450));
+      }
+      if (voicePreviewStatus) voicePreviewStatus.textContent = "Call booked in — nothing missed";
+      voiceDonePanel.classList.remove("opacity-0");
+    };
+
+    const voiceCardObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          playVoiceCard();
+          voiceCardObserver.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    voiceCardObserver.observe(voiceMsgs[0].parentElement);
   }
 
   // ===== Hero product carousel =====
