@@ -43,3 +43,5 @@ aspect that can matter if use jsp
 
 - Design page after what director or "content people" want.
 - Currently components already made for you. You need only place them.
+
+

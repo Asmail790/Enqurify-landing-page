@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enquirify — AI that answers every call, chat and enquiry</title>
   <meta name="description" content="Enquirify is AI customer support for businesses. It answers phone calls, website chats and enquiry forms 24/7, qualifies each customer and books the order — so you need no extra support staff." />
-  <link rel="icon" type="image/x-icon" href="./assets/imgs/logo.ico" />
+  <link rel="icon" type="image/x-icon" href="./assets/logo/logo.ico" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,14 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="./output.css" rel="stylesheet" />
 
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2/dist/countUp.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
+
   <!-- Set the theme before first paint to avoid a flash of the wrong colour scheme -->
   <script>
     (function () {
       try {
         var stored = localStorage.getItem("theme");
-        var dark = stored
-          ? stored === "dark"
-          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        // Dark is the default. Only an explicit "light" choice turns it off.
+        var dark = stored ? stored === "dark" : true;
         document.documentElement.classList.toggle("dark", dark);
       } catch (e) {}
     })();
@@ -32,27 +34,24 @@
 <nav class="sticky top-0 z-50 bg-surface-subtle border-b border-border-subtle">
   <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
     <a href="#" class="flex items-center gap-2 font-semibold text-lg" aria-label="Enquirify home">
-      <img src="./assets/imgs/logo.png" draggable="false" alt="" class="h-5 w-auto" />
+      <img src="./assets/logo/logo.png" draggable="false" alt="" class="h-5 w-auto" />
       <span>Enquirify</span>
     </a>
 
     <div class="hidden xl:flex items-center gap-5 text-sm text-fg-muted">
-      <a href="#products" class="whitespace-nowrap hover:text-fg-brand transition">Our platform</a>
-      <a href="#smart-features" class="whitespace-nowrap hover:text-fg-brand transition">Smart features</a>
-      <a href="#how-it-works" class="whitespace-nowrap hover:text-fg-brand transition">How it works</a>
-      <a href="#reviews" class="whitespace-nowrap hover:text-fg-brand transition">Reviews</a>
-      <a href="#savings" class="whitespace-nowrap hover:text-fg-brand transition">The numbers</a>
-      <a href="#integrations" class="whitespace-nowrap hover:text-fg-brand transition">Integrations</a>
-      <a href="#pricing" class="whitespace-nowrap hover:text-fg-brand transition">Pricing</a>
+      <a href="#products" class="whitespace-nowrap hover:text-fg-brand transition">OUR PLATFORM</a>
+      <a href="#forms" class="whitespace-nowrap hover:text-fg-brand transition">ENQUIRIFY FORMS</a>
+      <a href="#voice" class="whitespace-nowrap hover:text-fg-brand transition">ENQUIRIFY VOICE</a>
+      <a href="#how-it-works" class="whitespace-nowrap hover:text-fg-brand transition">HOW IT WORKS</a>
+      <a href="#pricing" class="whitespace-nowrap hover:text-fg-brand transition">PRICING</a>
       <a href="#faq" class="whitespace-nowrap hover:text-fg-brand transition">FAQ</a>
-      <a href="#contact" class="whitespace-nowrap hover:text-fg-brand transition">Product trial</a>
     </div>
 
     <div class="flex items-center gap-2">
       <a href="#contact" class="hidden xl:inline-flex items-center px-4 py-2 rounded-sm border border-border text-sm font-semibold text-fg hover:border-border-brand hover:text-fg-brand transition-colors duration-300">Login</a>
 
-      <button id="theme-toggle" type="button" class="w-10 h-10 flex items-center justify-center rounded-sm border border-border text-fg-muted hover:text-fg-brand hover:border-border-strong transition-colors duration-300" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle dark mode">
-        <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+      <button id="theme-toggle" type="button" class="w-10 h-10 flex items-center justify-center rounded-sm border border-border text-fg-muted hover:text-fg-brand hover:border-border-strong transition-colors duration-300" aria-label="Switch to light mode" aria-pressed="true" title="Toggle dark mode">
+        <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
       </button>
 
       <button id="mobile-menu-btn" type="button" class="xl:hidden w-10 h-10 flex items-center justify-center rounded-sm border border-border text-fg-muted" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -63,15 +62,12 @@
 
   <div id="mobile-menu" class="hidden xl:hidden border-t border-border-subtle bg-surface px-6 py-4">
     <div class="flex flex-col gap-4 text-sm">
-      <a href="#products" class="hover:text-fg-brand">Our platform</a>
-      <a href="#smart-features" class="hover:text-fg-brand">Smart features</a>
-      <a href="#how-it-works" class="hover:text-fg-brand">How it works</a>
-      <a href="#reviews" class="hover:text-fg-brand">Reviews</a>
-      <a href="#savings" class="hover:text-fg-brand">The numbers</a>
-      <a href="#integrations" class="hover:text-fg-brand">Integrations</a>
-      <a href="#pricing" class="hover:text-fg-brand">Pricing</a>
+      <a href="#products" class="hover:text-fg-brand">OUR PLATFORM</a>
+      <a href="#forms" class="hover:text-fg-brand">ENQUIRIFY FORMS</a>
+      <a href="#voice" class="hover:text-fg-brand">ENQUIRIFY VOICE</a>
+      <a href="#how-it-works" class="hover:text-fg-brand">HOW IT WORKS</a>
+      <a href="#pricing" class="hover:text-fg-brand">PRICING</a>
       <a href="#faq" class="hover:text-fg-brand">FAQ</a>
-      <a href="#contact" class="hover:text-fg-brand">Product trial</a>
 
       <a href="#contact" class="mt-1 text-center px-4 py-2.5 rounded-sm border border-border font-semibold text-fg hover:border-border-brand hover:text-fg-brand transition-colors">Login</a>
     </div>
@@ -130,6 +126,16 @@
             </svg>
             <p class="text-base font-semibold tracking-wide">ENQUIRIFY FORMS</p>
           </div>
+          <div class="mt-4 aspect-video w-full overflow-hidden rounded-sm bg-surface-inverse" data-video data-video-id="aqz-KE-bpKQ">
+            <button type="button" class="group relative block h-full w-full" aria-label="Play the ENQUIRIFY FORMS demo video">
+              <img src="https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="" class="h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" loading="lazy" />
+              <span class="absolute inset-0 grid place-items-center">
+                <span class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <i class="fa-solid fa-play text-lg" aria-hidden="true"></i>
+                </span>
+              </span>
+            </button>
+          </div>
           <p class="mt-4 text-sm leading-relaxed text-fg-muted">Website forms and live chat that capture every enquiry, qualify the customer and hand back a booked order — every hour of the day.</p>
           <p class="mt-3 text-sm leading-relaxed text-fg-muted">It asks for the name, number, address and preferred time, checks the details against your availability, and writes the job into your calendar before the customer has even closed the tab.</p>
         </div>
@@ -146,6 +152,16 @@
               <path d="M33 26h2.5l3.5-3v12l-3.5-3H33z" />
             </svg>
             <p class="text-base font-semibold tracking-wide">ENQUIRIFY VOICE</p>
+          </div>
+          <div class="mt-4 aspect-video w-full overflow-hidden rounded-sm bg-surface-inverse" data-video data-video-id="LXb3EKWsInQ">
+            <button type="button" class="group relative block h-full w-full" aria-label="Play the ENQUIRIFY VOICE demo video">
+              <img src="https://i.ytimg.com/vi/LXb3EKWsInQ/hqdefault.jpg" alt="" class="h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" loading="lazy" />
+              <span class="absolute inset-0 grid place-items-center">
+                <span class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <i class="fa-solid fa-play text-lg" aria-hidden="true"></i>
+                </span>
+              </span>
+            </button>
           </div>
           <p class="mt-4 text-sm leading-relaxed text-fg-muted">A phone assistant that answers every call, takes the order and writes the booking straight into your calendar, with a full transcript attached.</p>
           <p class="mt-3 text-sm leading-relaxed text-fg-muted">It speaks naturally, copes with interruptions and never rushes a caller. Anything urgent is transferred to your mobile with the whole conversation attached.</p>
@@ -164,6 +180,16 @@
             </svg>
             <p class="text-base font-semibold tracking-wide">ENQUIRIFY EMAIL</p>
           </div>
+          <div class="mt-4 aspect-video w-full overflow-hidden rounded-sm bg-surface-inverse" data-video data-video-id="ysz5S6PUM-U">
+            <button type="button" class="group relative block h-full w-full" aria-label="Play the ENQUIRIFY EMAIL demo video">
+              <img src="https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="" class="h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" loading="lazy" />
+              <span class="absolute inset-0 grid place-items-center">
+                <span class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <i class="fa-solid fa-play text-lg" aria-hidden="true"></i>
+                </span>
+              </span>
+            </button>
+          </div>
           <p class="mt-4 text-sm leading-relaxed text-fg-muted">Replies to your inbox in seconds, drafts the follow-up itself and keeps every thread logged in one shared place your team can pick up.</p>
           <p class="mt-3 text-sm leading-relaxed text-fg-muted">Quotes, prices and availability come from the answers you have already approved, so nothing is invented and no enquiry is left half-answered overnight.</p>
         </div>
@@ -180,6 +206,16 @@
               <path d="M26 20l-4 18" />
             </svg>
             <p class="text-base font-semibold tracking-wide">ENQUIRIFY API</p>
+          </div>
+          <div class="mt-4 aspect-video w-full overflow-hidden rounded-sm bg-surface-inverse" data-video data-video-id="ScMzIvxBSi4">
+            <button type="button" class="group relative block h-full w-full" aria-label="Play the ENQUIRIFY API demo video">
+              <img src="https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="" class="h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" loading="lazy" />
+              <span class="absolute inset-0 grid place-items-center">
+                <span class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                  <i class="fa-solid fa-play text-lg" aria-hidden="true"></i>
+                </span>
+              </span>
+            </button>
           </div>
           <p class="mt-4 text-sm leading-relaxed text-fg-muted">Drop the same engine into your own product with a REST API, webhooks and full control over every conversation it handles.</p>
           <p class="mt-3 text-sm leading-relaxed text-fg-muted">Send an enquiry in and get back a qualified lead, a booking or a full transcript — then push it wherever your team already works.</p>
@@ -219,7 +255,7 @@
         <!-- app bar -->
         <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border-subtle px-5 py-3">
           <div class="flex items-center gap-2">
-            <img src="./assets/imgs/logo.png" alt="" draggable="false" class="h-5 w-auto" />
+            <img src="./assets/logo/logo.png" alt="" draggable="false" class="h-5 w-auto" />
             <span class="text-sm font-semibold">Enquirify</span>
             <span class="hidden sm:inline-flex chip bg-surface-selected text-fg-brand">Dashboard</span>
           </div>
@@ -396,7 +432,7 @@
     </div>
 
     <!-- FORMS -->
-    <div class="mb-24 md:mb-28 fade-in">
+    <div id="forms" class="mb-24 md:mb-28 fade-in">
       <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-3">ENQUIRIFY FORMS</p>
       <h3 class="text-center text-xl md:text-2xl font-bold mb-10">Turn every enquiry into a sale</h3>
 
@@ -410,7 +446,7 @@
           <div class="mt-2">
             <div class="grid grid-cols-1 items-start gap-6 sm:grid-cols-3 sm:gap-5">
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M48 40a12 12 0 1 1-24 0a12 12 0 1 1 24 0" />
                   <path d="M18 70c0-8.3 8-15 18-15s18 6.7 18 15" />
                   <path d="M53 20a6.5 6.5 0 1 1 10 5.2c-2 1.5-3.5 3.2-3.5 5.8" />
@@ -424,7 +460,7 @@
               </figure>
 
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M40 22a2 2 0 1 1 0 4a2 2 0 1 1 0-4" />
                   <path d="M40 26v6" />
                   <path d="M22 37v8" />
@@ -442,7 +478,7 @@
               </figure>
 
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M24 39l11 11 20-22" stroke-width="6" />
                 </svg>
                 <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
@@ -526,7 +562,7 @@
     </div>
 
     <!-- VOICE -->
-    <div class="fade-in">
+    <div id="voice" class="fade-in">
       <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-3">ENQUIRIFY VOICE</p>
       <h3 class="text-center text-xl md:text-2xl font-bold mb-10">Answer every call, automatically</h3>
 
@@ -584,7 +620,7 @@
           <div class="mt-2">
             <div class="grid grid-cols-1 items-start gap-6 sm:grid-cols-3 sm:gap-5">
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M48 40a12 12 0 1 1-24 0a12 12 0 1 1 24 0" />
                   <path d="M18 70c0-8.3 8-15 18-15s18 6.7 18 15" />
                   <g transform="translate(48.5 14.5) scale(1.15)">
@@ -599,7 +635,7 @@
               </figure>
 
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M40 22a2 2 0 1 1 0 4a2 2 0 1 1 0-4" />
                   <path d="M40 26v6" />
                   <path d="M22 37v8" />
@@ -617,7 +653,7 @@
               </figure>
 
               <figure class="flex flex-col items-center gap-2 text-center">
-                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="flow-svg h-16 w-auto text-primary" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M24 39l11 11 20-22" stroke-width="6" />
                 </svg>
                 <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
@@ -811,11 +847,16 @@
         <p class="text-sm text-fg-muted">Booked in and sent straight to your kitchen.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <hr class="mt-16 md:mt-20 border-t border-border-subtle" />
+<!-- section divider -->
+<div class="border-t border-border-subtle"></div>
 
-    <!-- DEMO -->
-    <div id="micro-demo" class="mt-12 md:mt-16 fade-in scroll-mt-24">
+<!-- LIVE DEMO -->
+<section id="micro-demo" class="bg-surface-subtle py-20 md:py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="fade-in">
       <div class="text-center max-w-2xl mx-auto mb-6">
         <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-2 leading-tight">LIVE DEMO</p>
         <h3 class="text-lg md:text-xl font-bold mb-2">See the agent answer for itself</h3>
@@ -850,19 +891,19 @@
             <span id="voice-timer" class="chip bg-bg-success text-fg-success hidden">00:00</span>
           </div>
 
-          <div id="voice-log" class="space-y-2 min-h-[11rem] mb-4">
+          <div id="voice-log" class="space-y-2 min-h-44 mb-4">
             <p id="voice-hint" class="text-sm text-fg-subtle text-center pt-8">Press “Start the call” to play the sample conversation.</p>
 
-            <div data-voice-line class="hidden flex justify-end">
+            <div data-voice-line class="flex justify-end">
               <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">Hi, are you open for collection tonight?</p>
             </div>
-            <div data-voice-line class="hidden flex justify-start">
+            <div data-voice-line class="flex justify-start">
               <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg">We are — collection orders until 10pm. What can I get you?</p>
             </div>
-            <div data-voice-line class="hidden flex justify-end">
+            <div data-voice-line class="flex justify-end">
               <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">One large pepperoni, please.</p>
             </div>
-            <div data-voice-line class="hidden flex justify-start">
+            <div data-voice-line class="flex justify-start">
               <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg">Booked in for 8:30pm. I've texted the payment link — see you then!</p>
             </div>
           </div>
@@ -887,7 +928,7 @@
             <span class="chip bg-bg-success text-fg-success"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Live</span>
           </div>
 
-          <div id="forms-log" class="space-y-2 min-h-[11rem] max-h-64 overflow-y-auto mb-4 pr-1">
+          <div id="forms-log" class="space-y-2 min-h-44 max-h-64 overflow-y-auto mb-4 pr-1">
             <div class="flex justify-start">
               <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg">Hi! Ask me about orders, bookings or opening hours.</p>
             </div>
@@ -1189,12 +1230,12 @@
         </p>
         <p class="text-xs text-fg-subtle mt-1 mb-6">Billed monthly. Cancel any time.</p>
 
-        <ul class="space-y-3 text-sm text-fg-muted mb-8">
-          <li class="flex items-start gap-3"><i class="fa-solid fa-check text-fg-brand mt-1" aria-hidden="true"></i> Website forms and live chat</li>
-          <li class="flex items-start gap-3"><i class="fa-solid fa-check text-fg-brand mt-1" aria-hidden="true"></i> Up to 300 conversations a month</li>
-          <li class="flex items-start gap-3"><i class="fa-solid fa-check text-fg-brand mt-1" aria-hidden="true"></i> Instant AI replies and enquiry scoring</li>
-          <li class="flex items-start gap-3"><i class="fa-solid fa-check text-fg-brand mt-1" aria-hidden="true"></i> Email and SMS notifications</li>
-          <li class="flex items-start gap-3"><i class="fa-solid fa-check text-fg-brand mt-1" aria-hidden="true"></i> Email support</li>
+        <ul class="space-y-3 text-sm text-fg-muted mb-8 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>i]:mt-1 [&>li>i]:text-fg-brand">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Website forms and live chat</li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Up to 300 conversations a month</li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Instant AI replies and enquiry scoring</li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Email and SMS notifications</li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Email support</li>
         </ul>
 
         <a href="#contact" class="mt-auto block text-center px-5 py-3 rounded-sm font-semibold border border-border text-fg hover:border-border-strong transition duration-300">
@@ -1414,14 +1455,12 @@
   </div>
 
   <div class="mt-12 flex justify-center px-6">
-    <img src="./assets/imgs/long-logo.png" alt="Enquirify" draggable="false" class="h-10 md:h-12 w-auto opacity-70 hover:opacity-100 transition duration-300 dark:h-7 md:dark:h-8 dark:bg-fg dark:rounded-lg dark:p-1.5" />
+    <img src="./assets/logo/long-logo.png" alt="Enquirify" draggable="false" class="h-10 md:h-12 w-auto opacity-70 hover:opacity-100 transition duration-300 dark:h-7 md:dark:h-8 dark:bg-fg dark:rounded-lg dark:p-1.5" />
   </div>
 
   <div class="text-center text-fg-subtle mt-6">© 2026 Enquirify. All rights reserved.</div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/countup.js@2/dist/countUp.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
 <script>
   // Reveal sections on scroll
   const observer = new IntersectionObserver(
@@ -1478,15 +1517,6 @@
       try {
         localStorage.setItem("theme", isDark ? "dark" : "light");
       } catch (e) {}
-      syncThemeUI();
-    });
-
-    // Follow the OS preference until the visitor picks a theme explicitly
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
-      try {
-        if (localStorage.getItem("theme")) return;
-      } catch (e) {}
-      root.classList.toggle("dark", event.matches);
       syncThemeUI();
     });
   }
@@ -1753,39 +1783,85 @@
     }
   }
 
-  // ===== Voice card reveal =====
+  // ===== Voice card animation (mirrors the Forms live-chat card) =====
   const voiceDonePanel = document.querySelector("[data-voice-done]");
   const voiceMsgs = Array.from(document.querySelectorAll("[data-voice-msg]"));
   const voicePreviewStatus = document.getElementById("voice-preview-status");
   const voiceCardReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (voiceDonePanel && voiceMsgs.length && !voiceCardReduced) {
-    voiceMsgs.forEach((msg) => msg.classList.add("opacity-0", "translate-y-1"));
-    voiceDonePanel.classList.add("opacity-0");
-    if (voicePreviewStatus) voicePreviewStatus.textContent = "Caller is speaking…";
+    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    const typingRows = [];
 
-    const playVoiceCard = async () => {
-      for (const msg of voiceMsgs) {
-        msg.classList.remove("opacity-0", "translate-y-1");
-        await new Promise((resolve) => setTimeout(resolve, 450));
-      }
-      if (voicePreviewStatus) voicePreviewStatus.textContent = "Call booked in — nothing missed";
-      voiceDonePanel.classList.remove("opacity-0");
+    const addTyping = (beforeEl) => {
+      const row = document.createElement("div");
+      row.className = "flex justify-end";
+      row.innerHTML =
+        '<div class="bg-surface-selected rounded-xl rounded-tr-none px-4 py-2.5"><div class="flex gap-1 items-center">' +
+        '<span class="typing-dot"></span><span class="typing-dot" style="animation-delay:.15s"></span><span class="typing-dot" style="animation-delay:.3s"></span>' +
+        "</div></div>";
+      beforeEl.parentElement.insertBefore(row, beforeEl);
+      typingRows.push(row);
+      return row;
     };
 
-    const voiceCardObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          playVoiceCard();
-          voiceCardObserver.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.4 }
-    );
+    const clearTyping = () => {
+      while (typingRows.length) typingRows.pop().remove();
+    };
 
-    voiceCardObserver.observe(voiceMsgs[0].parentElement);
+    async function playVoiceCard() {
+      voiceMsgs.forEach((msg) => msg.classList.add("opacity-0", "translate-y-1"));
+      voiceDonePanel.classList.add("opacity-0");
+      if (voicePreviewStatus) voicePreviewStatus.textContent = "Caller is speaking…";
+      await wait(1000);
+
+      for (const msg of voiceMsgs) {
+        const isAi = msg.classList.contains("justify-end");
+        if (isAi) {
+          if (voicePreviewStatus) voicePreviewStatus.textContent = "AI is responding…";
+          const typing = addTyping(msg);
+          await wait(900);
+          typing.remove();
+          typingRows.splice(typingRows.indexOf(typing), 1);
+        } else if (voicePreviewStatus) {
+          voicePreviewStatus.textContent = "Caller is speaking…";
+          await wait(700);
+        }
+        msg.classList.remove("opacity-0", "translate-y-1");
+        await wait(800);
+      }
+
+      if (voicePreviewStatus) voicePreviewStatus.textContent = "Call booked in — nothing missed";
+      voiceDonePanel.classList.remove("opacity-0");
+      await wait(3200);
+      clearTyping();
+    }
+
+    (async () => {
+      while (true) await playVoiceCard();
+    })();
   }
+
+  // ===== Product video facades (load the YouTube embed on click) =====
+  document.querySelectorAll("[data-video]").forEach((facade) => {
+    const trigger = facade.querySelector("button");
+    if (!trigger) return;
+    trigger.addEventListener(
+      "click",
+      () => {
+        const videoId = facade.dataset.videoId;
+        if (!videoId) return;
+        const frame = document.createElement("iframe");
+        frame.className = "h-full w-full";
+        frame.src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1&rel=0";
+        frame.title = (facade.closest(".card")?.querySelector("p")?.textContent || "Product") + " — demo video";
+        frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        frame.allowFullscreen = true;
+        facade.replaceChildren(frame);
+      },
+      { once: true }
+    );
+  });
 
   // ===== Hero product carousel =====
   const heroCarousel = document.getElementById("hero-carousel");
@@ -1830,6 +1906,7 @@
   }
 
   // ===== Draw the step symbols with Vivus =====
+  // Runs on the flow diagrams in ENQUIRIFY FORMS, ENQUIRIFY VOICE and HOW IT WORKS.
   const flowSvgs = document.querySelectorAll(".flow-svg");
   const flowReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

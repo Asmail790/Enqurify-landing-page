@@ -221,19 +221,9 @@
     animation: var(--animate-ring-ping);
   }
 
-  /* ===== hover lifts ===== */
-  .lift {
-    transition: transform 0.35s ease;
-  }
-  .lift:hover {
-    transform: translateY(-8px);
-  }
-
+  /* ===== icon transition (no hover lift on cards) ===== */
   .icon-pop {
     transition: transform 0.3s ease;
-  }
-  .lift:hover .icon-pop {
-    transform: scale(1.12) rotate(-4deg);
   }
 
   /* ===== typing dots ===== */
@@ -246,7 +236,7 @@
   }
 
   /* ===== flow diagrams (forms / voice) ===== */
-  /* Symbols are stroke-only paths drawn by Vivus on scroll (see index.html). */
+  /* Symbols are stroke-only paths supplied by assets/icons.js. */
   .flow-svg path {
     stroke-linecap: round;
     stroke-linejoin: round;
