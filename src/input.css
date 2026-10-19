@@ -84,7 +84,6 @@
   /* animations */
   --animate-ring-shake: ringShake 2.6s ease-in-out infinite;
   --animate-ring-ping: ringPing 2.6s ease-in-out infinite;
-  --animate-wave-move: waveMove 1.2s ease-in-out infinite;
   --animate-typing-bounce: typingBounce 1.2s infinite;
 }
 
@@ -169,7 +168,6 @@
     }
     .ring-shake,
     .ping-ring,
-    .wave-bar,
     .typing-dot {
       animation: none !important;
     }
@@ -238,14 +236,6 @@
     transform: scale(1.12) rotate(-4deg);
   }
 
-  /* ===== voice waveform ===== */
-  .wave-bar {
-    width: 4px;
-    border-radius: 9999px;
-    background: var(--color-fg-brand);
-    animation: var(--animate-wave-move);
-  }
-
   /* ===== typing dots ===== */
   .typing-dot {
     width: 6px;
@@ -255,12 +245,44 @@
     animation: var(--animate-typing-bounce);
   }
 
+  /* ===== flow diagrams (forms / voice) ===== */
+  /* Symbols are stroke-only paths drawn by Vivus on scroll (see index.html). */
+  .flow-svg path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ===== how it works cards ===== */
+  .step-card {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  .show .step-card {
+    animation: stepIn 0.5s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.14s);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .step-card {
+      opacity: 1;
+      transform: none;
+      animation: none !important;
+    }
+  }
+
   /* ===== FAQ accordion ===== */
   summary::-webkit-details-marker {
     display: none;
   }
   summary {
     list-style: none;
+  }
+}
+
+/* ===== anchor offset ===== */
+/* Page scrolls normally now, but in-page links still clear the sticky nav. */
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
   }
 }
 
@@ -306,13 +328,10 @@
   }
 }
 
-@keyframes waveMove {
-  0%,
-  100% {
-    height: 6px;
-  }
-  50% {
-    height: 24px;
+@keyframes stepIn {
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 

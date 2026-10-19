@@ -80,35 +80,28 @@
 
 
 <!-- HERO -->
-<section class="relative overflow-hidden bg-surface-subtle">
+<section class="relative overflow-clip bg-surface-subtle">
   <div class="relative max-w-7xl mx-auto px-6 pt-16 md:pt-20 pb-20 md:pb-24">
 
     <!-- HEADLINE -->
     <div class="fade-in show">
       <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand mb-3 tracking-wide leading-tight">AI CUSTOMER SUPPORT FOR BUSINESSES</p>
-      <h1 class="text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-balance">
-        Customer support that answers every call, chat and enquiry
-        <span class="relative inline-block grad-text">
-          24/7.
-          <span class="absolute left-0 -bottom-2 h-1.5 w-full bg-fg-brand" aria-hidden="true"></span>
-        </span>
+      <h1 class="text-center text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-balance">
+        Customer support that answers every call, chat and enquiry 24 / 7
       </h1>
     </div>
 
-    <div class="mt-10 md:mt-14 grid md:grid-cols-2 gap-14 md:gap-16 items-start">
-
-    <!-- LEFT -->
-    <div class="fade-in show space-y-8">
-      <p class="text-fg-muted text-lg leading-relaxed max-w-xl">
-        Enquirify is AI customer support for businesses. It answers phone calls, website chats and enquiry forms instantly, qualifies each customer and books the order — so you need no extra support staff, and your business stays open around the clock.
+    <div class="mt-10 md:mt-14 max-w-3xl mx-auto text-center fade-in show">
+      <p class="text-fg-muted text-lg leading-relaxed">
+        Enquirify is AI customer support for businesses of every size. It answers phone calls, website chats and enquiry forms the moment they arrive, qualifies each customer with the details you actually need, and turns the conversation into a confirmed booking — so nothing waits in a queue, nothing goes to voicemail, and your business keeps selling long after the doors have closed.
       </p>
 
-      <div class="flex flex-wrap gap-3">
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a href="#pricing" class="px-4 py-3 bg-primary text-primary-foreground rounded-sm font-semibold hover:bg-primary-hovered transition duration-300">
           Get started
         </a>
         <a href="#micro-demo" class="inline-flex items-center gap-2 px-4 py-3 border border-border bg-surface rounded-sm font-semibold hover:border-border-strong hover:-translate-y-0.5 transition duration-300">
-          <i class="fa-solid fa-circle-play text-fg-brand text-lg" aria-hidden="true"></i>
+          <i class="fa-solid fa-circle-play text-icon-warning text-lg" aria-hidden="true"></i>
           Live demo
         </a>
         <a href="#reviews" class="inline-flex items-center gap-2 px-4 py-3 border border-border bg-surface rounded-sm font-semibold hover:border-border-strong hover:-translate-y-0.5 transition duration-300">
@@ -118,24 +111,90 @@
       </div>
     </div>
 
-    <!-- RIGHT ICON -->
-    <div class="fade-in show flex items-center justify-center">
-      <svg class="w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 text-primary" viewBox="0 0 240 240" fill="none" role="img" aria-label="AI assistant robot">
-        <!-- antenna -->
-        <circle cx="120" cy="28" r="10" fill="currentColor" />
-        <rect x="115" y="38" width="10" height="24" fill="currentColor" />
-        <!-- side ears -->
-        <rect x="36" y="94" width="16" height="36" rx="8" fill="currentColor" />
-        <rect x="188" y="94" width="16" height="36" rx="8" fill="currentColor" />
-        <!-- head -->
-        <rect x="54" y="60" width="132" height="104" rx="30" stroke="currentColor" stroke-width="12" />
-        <!-- eyes -->
-        <circle cx="98" cy="104" r="11" fill="currentColor" />
-        <circle cx="142" cy="104" r="11" fill="currentColor" />
-        <!-- mouth -->
-        <rect x="96" y="130" width="48" height="9" rx="4.5" fill="currentColor" />
-      </svg>
-    </div>
+    <!-- PRODUCT CAROUSEL -->
+    <div class="mt-12 md:mt-16 max-w-3xl mx-auto fade-in show" role="region" aria-roledescription="carousel" aria-label="Enquirify products">
+      <div id="hero-carousel" class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+
+        <div class="card w-full shrink-0 snap-start p-6 sm:p-7">
+          <div class="flex items-center gap-3">
+            <svg class="h-12 w-12 shrink-0 text-primary" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Forms app">
+              <rect x="3" y="5" width="42" height="38" rx="4" />
+              <path d="M3 14h42" />
+              <circle cx="8.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="12.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="16.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <path d="M10 21h13M10 26h19" />
+              <rect x="10" y="30" width="28" height="6" rx="1.5" />
+              <path d="M13 33h7" />
+              <rect x="10" y="38" width="12" height="4.5" rx="1.5" fill="currentColor" stroke="none" />
+            </svg>
+            <p class="text-base font-semibold tracking-wide">ENQUIRIFY FORMS</p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-fg-muted">Website forms and live chat that capture every enquiry, qualify the customer and hand back a booked order — every hour of the day.</p>
+          <p class="mt-3 text-sm leading-relaxed text-fg-muted">It asks for the name, number, address and preferred time, checks the details against your availability, and writes the job into your calendar before the customer has even closed the tab.</p>
+        </div>
+
+        <div class="card w-full shrink-0 snap-start p-6 sm:p-7">
+          <div class="flex items-center gap-3">
+            <svg class="h-12 w-12 shrink-0 text-primary" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Voice app">
+              <rect x="3" y="5" width="42" height="38" rx="4" />
+              <path d="M3 14h42" />
+              <circle cx="8.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="12.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="16.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <path d="M11 33v-5M15.5 35v-9M20 37v-13M24.5 35v-9M29 33v-5" />
+              <path d="M33 26h2.5l3.5-3v12l-3.5-3H33z" />
+            </svg>
+            <p class="text-base font-semibold tracking-wide">ENQUIRIFY VOICE</p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-fg-muted">A phone assistant that answers every call, takes the order and writes the booking straight into your calendar, with a full transcript attached.</p>
+          <p class="mt-3 text-sm leading-relaxed text-fg-muted">It speaks naturally, copes with interruptions and never rushes a caller. Anything urgent is transferred to your mobile with the whole conversation attached.</p>
+        </div>
+
+        <div class="card w-full shrink-0 snap-start p-6 sm:p-7">
+          <div class="flex items-center gap-3">
+            <svg class="h-12 w-12 shrink-0 text-primary" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Email app">
+              <rect x="3" y="5" width="42" height="38" rx="4" />
+              <path d="M3 14h42" />
+              <circle cx="8.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="12.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="16.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <rect x="10" y="20" width="28" height="18" rx="2" />
+              <path d="m10 22 14 9 14-9" />
+            </svg>
+            <p class="text-base font-semibold tracking-wide">ENQUIRIFY EMAIL</p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-fg-muted">Replies to your inbox in seconds, drafts the follow-up itself and keeps every thread logged in one shared place your team can pick up.</p>
+          <p class="mt-3 text-sm leading-relaxed text-fg-muted">Quotes, prices and availability come from the answers you have already approved, so nothing is invented and no enquiry is left half-answered overnight.</p>
+        </div>
+
+        <div class="card w-full shrink-0 snap-start p-6 sm:p-7">
+          <div class="flex items-center gap-3">
+            <svg class="h-12 w-12 shrink-0 text-primary" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="API">
+              <rect x="3" y="5" width="42" height="38" rx="4" />
+              <path d="M3 14h42" />
+              <circle cx="8.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="12.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <circle cx="16.5" cy="9.5" r="1" fill="currentColor" stroke="none" />
+              <path d="M17 21l-6 8 6 8M31 21l6 8-6 8" />
+              <path d="M26 20l-4 18" />
+            </svg>
+            <p class="text-base font-semibold tracking-wide">ENQUIRIFY API</p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-fg-muted">Drop the same engine into your own product with a REST API, webhooks and full control over every conversation it handles.</p>
+          <p class="mt-3 text-sm leading-relaxed text-fg-muted">Send an enquiry in and get back a qualified lead, a booking or a full transcript — then push it wherever your team already works.</p>
+        </div>
+      </div>
+
+      <div class="mt-5 grid grid-cols-[auto_1fr_auto] items-center gap-4">
+        <button type="button" data-carousel-prev class="flex h-10 w-10 items-center justify-center rounded-sm border border-border text-fg-muted transition hover:border-border-strong hover:text-fg-brand disabled:opacity-40" aria-label="Previous product">
+          <i class="fa-solid fa-chevron-left text-xs" aria-hidden="true"></i>
+        </button>
+        <div class="flex items-center justify-center gap-1.5" data-carousel-dots></div>
+        <button type="button" data-carousel-next class="flex h-10 w-10 items-center justify-center rounded-sm border border-border text-fg-muted transition hover:border-border-strong hover:text-fg-brand disabled:opacity-40" aria-label="Next product">
+          <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -144,7 +203,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- PRODUCTS -->
-<section id="products" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="products" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">OUR PLATFORM</p>
@@ -338,14 +397,62 @@
 
     <!-- FORMS -->
     <div class="mb-24 md:mb-28 fade-in">
-      <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-8">ENQUIRIFY FORMS</p>
+      <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-3">ENQUIRIFY FORMS</p>
+      <h3 class="text-center text-xl md:text-2xl font-bold mb-10">Turn every enquiry into a sale</h3>
+
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-10">
         <div class="space-y-6">
-          <h3 class="text-xl md:text-2xl font-bold">Turn every enquiry into a sale</h3>
-
           <p class="text-fg-muted text-lg">
             Capture customer enquiries and turn them into orders instantly. AI responds in real time, collects order details and prioritises high value customers.
           </p>
+
+          <!-- enquiry -> AI -> order illustration -->
+          <div class="mt-2">
+            <div class="grid grid-cols-1 items-start gap-6 sm:grid-cols-3 sm:gap-5">
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M48 40a12 12 0 1 1-24 0a12 12 0 1 1 24 0" />
+                  <path d="M18 70c0-8.3 8-15 18-15s18 6.7 18 15" />
+                  <path d="M53 20a6.5 6.5 0 1 1 10 5.2c-2 1.5-3.5 3.2-3.5 5.8" />
+                  <path d="M59.5 38h.01" />
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">1</span>
+                  ENQUIRY
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Customer asks by form or chat.</p>
+              </figure>
+
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M40 22a2 2 0 1 1 0 4a2 2 0 1 1 0-4" />
+                  <path d="M40 26v6" />
+                  <path d="M22 37v8" />
+                  <path d="M58 37v8" />
+                  <path d="M30 32h20a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H30a5 5 0 0 1-5-5V37a5 5 0 0 1 5-5z" />
+                  <path d="M34 42h.01" />
+                  <path d="M46 42h.01" />
+                  <path d="M35 48h10" />
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">2</span>
+                  AI QUALIFIES
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Bot scores value and urgency.</p>
+              </figure>
+
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M24 39l11 11 20-22" stroke-width="6" />
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">3</span>
+                  ORDER CONFIRMED
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Booked and synced to your calendar.</p>
+              </figure>
+            </div>
+          </div>
         </div>
 
         <div class="relative rounded-sm p-4 sm:p-8">
@@ -420,7 +527,9 @@
 
     <!-- VOICE -->
     <div class="fade-in">
-      <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-8">ENQUIRIFY VOICE</p>
+      <p class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide leading-tight mb-3">ENQUIRIFY VOICE</p>
+      <h3 class="text-center text-xl md:text-2xl font-bold mb-10">Answer every call, automatically</h3>
+
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-10">
         <div class="relative rounded-sm p-4 sm:p-8 order-2 md:order-1">
           <div class="lift card p-5">
@@ -429,45 +538,96 @@
                 <div class="icon-box bg-surface-selected text-icon-brand"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
                 <div>
                   <p class="text-sm font-semibold">Active call</p>
-                  <p id="voice-preview-status" class="text-xs text-fg-subtle">Caller is speaking…</p>
+                  <p id="voice-preview-status" class="text-xs text-fg-subtle">Call booked in — nothing missed</p>
                 </div>
               </div>
-              <span class="chip bg-bg-success text-fg-success"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> <span id="voice-preview-timer" class="tabular-nums">00:00</span></span>
+              <span class="chip bg-bg-success text-fg-success"><i class="fa-solid fa-circle text-[6px]" aria-hidden="true"></i> Connected</span>
             </div>
 
-            <div id="voice-preview-log" class="flex flex-col justify-end gap-2 h-56 mb-4 overflow-hidden">
+            <div id="voice-preview-log" class="flex flex-col gap-2 mb-4">
               <div class="flex justify-end">
                 <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">Thanks for calling Spice Lane — how can I help?</p>
               </div>
+              <div class="flex justify-start">
+                <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">Hi, are you open for collection tonight?</p>
+              </div>
+              <div class="flex justify-end">
+                <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">We are — orders until 10pm. What can I get you?</p>
+              </div>
+              <div class="flex justify-start">
+                <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">One large pepperoni, please.</p>
+              </div>
+              <div class="flex justify-end">
+                <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tr-none text-sm bg-surface-selected text-fg">Booked for 8:30pm. I've texted the payment link — see you then!</p>
+              </div>
+              <div class="flex justify-start">
+                <p class="max-w-[85%] px-4 py-2.5 rounded-xl rounded-tl-none text-sm bg-surface-subtle text-fg-muted">Perfect, thanks.</p>
+              </div>
             </div>
 
-            <div data-voice-done class="bg-surface border border-border-brand rounded-sm p-4 mb-4 flex flex-wrap items-center justify-between gap-3 opacity-0 transition-opacity duration-500">
+            <div data-voice-done class="bg-surface border border-border-brand rounded-sm p-4 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p class="text-sm font-semibold">Enquiry converted</p>
                 <p class="text-xs text-fg-subtle">Booked for 8:30pm collection — payment link sent.</p>
               </div>
               <span class="chip bg-bg-success text-fg-success"><i class="fa-solid fa-thumbs-up" aria-hidden="true"></i> Happy customer</span>
             </div>
-
-            <div class="flex items-end justify-center gap-1 h-10" aria-hidden="true">
-              <span class="wave-bar" style="animation-delay: 0s"></span>
-              <span class="wave-bar" style="animation-delay: .1s"></span>
-              <span class="wave-bar" style="animation-delay: .2s"></span>
-              <span class="wave-bar" style="animation-delay: .3s"></span>
-              <span class="wave-bar" style="animation-delay: .4s"></span>
-              <span class="wave-bar" style="animation-delay: .3s"></span>
-              <span class="wave-bar" style="animation-delay: .2s"></span>
-              <span class="wave-bar" style="animation-delay: .1s"></span>
-            </div>
           </div>
         </div>
 
         <div class="space-y-6 order-1 md:order-2">
-          <h3 class="text-xl md:text-2xl font-bold">Answer every call, automatically</h3>
-
           <p class="text-fg-muted text-lg">
             Your AI phone assistant/receptionist answers every call, takes the enquiry, and processes it how you choose.
           </p>
+
+          <!-- incoming call -> AI -> booking illustration -->
+          <div class="mt-2">
+            <div class="grid grid-cols-1 items-start gap-6 sm:grid-cols-3 sm:gap-5">
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M48 40a12 12 0 1 1-24 0a12 12 0 1 1 24 0" />
+                  <path d="M18 70c0-8.3 8-15 18-15s18 6.7 18 15" />
+                  <g transform="translate(48.5 14.5) scale(1.15)">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </g>
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">1</span>
+                  INCOMING CALL
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Caller rings your existing number.</p>
+              </figure>
+
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M40 22a2 2 0 1 1 0 4a2 2 0 1 1 0-4" />
+                  <path d="M40 26v6" />
+                  <path d="M22 37v8" />
+                  <path d="M58 37v8" />
+                  <path d="M30 32h20a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H30a5 5 0 0 1-5-5V37a5 5 0 0 1 5-5z" />
+                  <path d="M34 42h.01" />
+                  <path d="M46 42h.01" />
+                  <path d="M35 48h10" />
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">2</span>
+                  AI ANSWERS
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Bot greets and takes the order.</p>
+              </figure>
+
+              <figure class="flex flex-col items-center gap-2 text-center">
+                <svg viewBox="0 0 80 80" class="flow-svg h-16 w-auto" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M24 39l11 11 20-22" stroke-width="6" />
+                </svg>
+                <figcaption class="flex items-center gap-2 text-[10px] font-semibold tracking-wider text-fg-subtle sm:text-xs">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">3</span>
+                  BOOKED IN
+                </figcaption>
+                <p class="text-[11px] leading-snug text-fg-muted">Slot confirmed, payment link sent.</p>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -516,7 +676,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- GUARDRAILS -->
-<section id="guardrails" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="guardrails" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">GUARDRAILS</p>
@@ -526,19 +686,19 @@
 
     <div class="grid sm:grid-cols-3 gap-6 fade-in">
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-shield-halved icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-shield-halved icon-pop" aria-hidden="true"></i></div>
         <h3 class="font-semibold mb-2">Never guesses a price</h3>
         <p class="text-sm text-fg-muted">If a price isn't in your menu or services, it says so and takes a message for a callback.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-ban icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-ban icon-pop" aria-hidden="true"></i></div>
         <h3 class="font-semibold mb-2">Holds your line on discounts</h3>
         <p class="text-sm text-fg-muted">Rules like “no discounts over 10%” are enforced politely — on every single call.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-phone-volume icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-phone-volume icon-pop" aria-hidden="true"></i></div>
         <h3 class="font-semibold mb-2">Knows when to get you</h3>
         <p class="text-sm text-fg-muted">Angry or urgent callers are transferred straight to your mobile, with the context attached.</p>
       </div>
@@ -552,7 +712,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- SMART FEATURES -->
-<section id="smart-features" class="bg-surface-subtle pt-14 pb-20 md:pb-24 scroll-mt-20">
+<section id="smart-features" class="bg-surface-subtle pt-14 pb-20 md:pb-24">
   <div class="max-w-6xl mx-auto px-6 fade-in">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">SMART FEATURES</p>
@@ -562,37 +722,37 @@
 
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-ranking-star icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-ranking-star icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">Auto-prioritised enquiries</h3>
         <p class="text-sm text-fg-muted">Every enquiry is scored on value and urgency, so the jobs worth the most never sit at the back of the queue.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-arrows-rotate icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-arrows-rotate icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">Follow-ups on autopilot</h3>
         <p class="text-sm text-fg-muted">Quiet enquiries get an automatic SMS, WhatsApp or email nudge, with nobody keeping a to-do list.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-calendar-check icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-calendar-check icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">Bookings that fill themselves</h3>
         <p class="text-sm text-fg-muted">Confirmed jobs drop straight into your calendar against real availability, with no double bookings.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-credit-card icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-credit-card icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">Payments in the chat</h3>
         <p class="text-sm text-fg-muted">Take a deposit or full payment inside the conversation, so there is nothing left to chase up later.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-headset icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-headset icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">Human handover when it matters</h3>
         <p class="text-sm text-fg-muted">Anything complex or sensitive reaches your team with the full transcript attached and nothing repeated.</p>
       </div>
 
       <div class="lift card p-6">
-        <div class="icon-box bg-surface-selected text-icon-brand mb-5"><i class="fa-solid fa-diagram-project icon-pop" aria-hidden="true"></i></div>
+        <div class="icon-box text-icon-brand mb-5"><i class="fa-solid fa-diagram-project icon-pop" aria-hidden="true"></i></div>
         <h3 class="text-lg font-bold mb-2">One inbox, every site</h3>
         <p class="text-sm text-fg-muted">Enquiries route to the right branch, team or phone line, with a single shared view for head office.</p>
       </div>
@@ -604,50 +764,50 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- HOW IT WORKS -->
-<section id="how-it-works" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="how-it-works" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-5xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-16 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">HOW IT WORKS</p>
       <h2 class="text-xl md:text-2xl font-bold">From first contact to confirmed order</h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6 fade-in">
+    <div class="grid md:grid-cols-3 gap-10 md:gap-8 fade-in">
 
-      <div class="card p-6">
-        <div class="flex items-start justify-between gap-3 mb-5">
-          <svg class="w-12 h-12 text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <div class="step-card flex flex-col items-center gap-3 text-center" style="--i: 0">
+        <svg class="flow-svg h-14 w-auto text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M8 5.5h3.6l1.4 4.4-2.1 1.6a14.5 14.5 0 0 0 7.4 7.4l1.6-2.1 4.4 1.4V22a2.6 2.6 0 0 1-2.8 2.6A19.4 19.4 0 0 1 5.4 8.3 2.6 2.6 0 0 1 8 5.5z" />
           <path d="M20.8 5.6a7.6 7.6 0 0 1 6 6" />
           <path d="M20.4 10.2a3.6 3.6 0 0 1 2.4 2.4" />
         </svg>
-          <span class="text-3xl font-bold leading-none text-fg-disabled tabular-nums">1</span>
+        <div class="flex items-center gap-2">
+          <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">1</span>
+          <h3 class="text-base font-bold">Customer reaches out</h3>
         </div>
-        <h3 class="text-lg font-bold mb-2">Customer reaches out</h3>
         <p class="text-sm text-fg-muted">By form, call or message, whichever they prefer.</p>
       </div>
 
-      <div class="card p-6">
-        <div class="flex items-start justify-between gap-3 mb-5">
-          <svg class="w-12 h-12 text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <div class="step-card flex flex-col items-center gap-3 text-center" style="--i: 1">
+        <svg class="flow-svg h-14 w-auto text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M5 9.5A3.5 3.5 0 0 1 8.5 6h15A3.5 3.5 0 0 1 27 9.5v9a3.5 3.5 0 0 1-3.5 3.5H14l-6 5v-5H8.5A3.5 3.5 0 0 1 5 18.5z" />
-          <path d="M16 9.6 17.6 14l4.4 1.6-4.4 1.6L16 21.6l-1.6-4.4L10 15.6l4.4-1.6z" fill="currentColor" stroke="none" />
+          <path d="M16 9.6 17.6 14l4.4 1.6-4.4 1.6L16 21.6l-1.6-4.4L10 15.6l4.4-1.6z" />
         </svg>
-          <span class="text-3xl font-bold leading-none text-fg-disabled tabular-nums">2</span>
+        <div class="flex items-center gap-2">
+          <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">2</span>
+          <h3 class="text-base font-bold">Enquirify responds</h3>
         </div>
-        <h3 class="text-lg font-bold mb-2">Enquirify responds</h3>
         <p class="text-sm text-fg-muted">Instantly, and qualifies exactly what they need.</p>
       </div>
 
-      <div class="card p-6">
-        <div class="flex items-start justify-between gap-3 mb-5">
-          <svg class="w-12 h-12 text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="5" y="8" width="22" height="19" rx="3.5" />
+      <div class="step-card flex flex-col items-center gap-3 text-center" style="--i: 2">
+        <svg class="flow-svg h-14 w-auto text-primary" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8.5 8h15a3.5 3.5 0 0 1 3.5 3.5v12a3.5 3.5 0 0 1-3.5 3.5h-15A3.5 3.5 0 0 1 5 23.5v-12A3.5 3.5 0 0 1 8.5 8z" />
           <path d="M5 14h22M11 5v5M21 5v5" />
           <path d="m11.5 21 2.7 2.7L21.5 16.5" stroke-width="2.2" />
         </svg>
-          <span class="text-3xl font-bold leading-none text-fg-disabled tabular-nums">3</span>
+        <div class="flex items-center gap-2">
+          <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-surface-selected text-[10px] font-bold text-fg-brand tabular-nums">3</span>
+          <h3 class="text-base font-bold">Order confirmed</h3>
         </div>
-        <h3 class="text-lg font-bold mb-2">Order confirmed</h3>
         <p class="text-sm text-fg-muted">Booked in and sent straight to your kitchen.</p>
       </div>
     </div>
@@ -679,9 +839,8 @@
         <div id="demo-voice" role="tabpanel" aria-labelledby="demo-tab-voice" class="card p-5 sm:p-6">
           <div class="flex items-center justify-between gap-3 mb-4">
             <div class="flex items-center gap-3">
-              <div class="relative icon-box bg-surface-selected text-icon-brand">
-                <span class="ping-ring"></span>
-                <i class="fa-solid fa-phone ring-shake relative" aria-hidden="true"></i>
+              <div class="icon-box bg-surface-selected text-icon-brand">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
               </div>
               <div>
                 <p class="text-sm font-semibold">Enquirify Voice</p>
@@ -689,17 +848,6 @@
               </div>
             </div>
             <span id="voice-timer" class="chip bg-bg-success text-fg-success hidden">00:00</span>
-          </div>
-
-          <div class="flex items-end justify-center gap-1 h-10 mb-4" aria-hidden="true">
-            <span class="wave-bar" style="animation-delay: 0s"></span>
-            <span class="wave-bar" style="animation-delay: .1s"></span>
-            <span class="wave-bar" style="animation-delay: .2s"></span>
-            <span class="wave-bar" style="animation-delay: .3s"></span>
-            <span class="wave-bar" style="animation-delay: .4s"></span>
-            <span class="wave-bar" style="animation-delay: .3s"></span>
-            <span class="wave-bar" style="animation-delay: .2s"></span>
-            <span class="wave-bar" style="animation-delay: .1s"></span>
           </div>
 
           <div id="voice-log" class="space-y-2 min-h-[11rem] mb-4">
@@ -772,7 +920,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- TESTIMONIALS -->
-<section id="reviews" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="reviews" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">REVIEWS</p>
@@ -893,7 +1041,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- RESULTS -->
-<section id="savings" class="bg-surface-subtle pt-4 pb-20 md:pb-24 scroll-mt-20">
+<section id="savings" class="bg-surface-subtle pt-4 pb-20 md:pb-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">THE NUMBERS</p>
@@ -935,7 +1083,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- INTEGRATIONS -->
-<section id="integrations" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="integrations" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12 md:mb-14 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">INTEGRATIONS</p>
@@ -945,7 +1093,7 @@
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-google" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-google" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Google Calendar</p>
           <p class="text-xs text-fg-subtle">Bookings &amp; diary</p>
@@ -953,7 +1101,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Microsoft 365</p>
           <p class="text-xs text-fg-subtle">Email &amp; diary</p>
@@ -961,7 +1109,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-shopify" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-shopify" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Shopify</p>
           <p class="text-xs text-fg-subtle">Orders &amp; stock</p>
@@ -969,7 +1117,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-square" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-square" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Square</p>
           <p class="text-xs text-fg-subtle">Payments &amp; POS</p>
@@ -977,7 +1125,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-stripe-s" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-stripe-s" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Stripe</p>
           <p class="text-xs text-fg-subtle">Card payments</p>
@@ -985,7 +1133,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-hubspot" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-hubspot" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">HubSpot</p>
           <p class="text-xs text-fg-subtle">CRM &amp; pipelines</p>
@@ -993,7 +1141,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-brands fa-slack" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-brands fa-slack" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Slack</p>
           <p class="text-xs text-fg-subtle">Team alerts</p>
@@ -1001,7 +1149,7 @@
       </div>
 
       <div class="lift card flex items-center gap-3 p-4">
-        <span class="icon-box bg-surface-selected text-icon-brand"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+        <span class="icon-box text-icon-brand"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
         <div>
           <p class="text-sm font-semibold">Zapier</p>
           <p class="text-xs text-fg-subtle">5,000+ apps</p>
@@ -1020,7 +1168,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- PRICING -->
-<section id="pricing" class="bg-surface-subtle py-20 md:py-24 scroll-mt-24">
+<section id="pricing" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-14 md:mb-16 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">PRICING</p>
@@ -1118,7 +1266,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- FAQ -->
-<section id="faq" class="bg-surface-subtle py-20 md:py-24 scroll-mt-20">
+<section id="faq" class="bg-surface-subtle py-20 md:py-24">
   <div class="max-w-3xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
       <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-fg-brand tracking-wide mb-3 leading-tight">FAQ</p>
@@ -1201,7 +1349,7 @@
 <div class="border-t border-border-subtle"></div>
 
 <!-- CTA -->
-<section id="contact" class="relative overflow-hidden bg-surface-subtle text-fg pt-16 md:pt-20 pb-20 md:pb-24 text-center scroll-mt-20">
+<section id="contact" class="relative overflow-clip bg-surface-subtle text-fg pt-16 md:pt-20 pb-20 md:pb-24 text-center">
   <div class="relative max-w-xl mx-auto px-6 space-y-6 fade-in">
     <h2 class="text-3xl md:text-4xl font-bold">Start converting more customers today</h2>
 
@@ -1273,6 +1421,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/countup.js@2/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
 <script>
   // Reveal sections on scroll
   const observer = new IntersectionObserver(
@@ -1510,102 +1659,6 @@
     });
   }
 
-  // ===== Animated Voice call preview =====
-  const voicePreviewLog = document.getElementById("voice-preview-log");
-  const voicePreviewStatus = document.getElementById("voice-preview-status");
-  const voicePreviewTimer = document.getElementById("voice-preview-timer");
-  const voicePreviewDone = document.querySelector("[data-voice-done]");
-  const voiceReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (voicePreviewLog) {
-    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-    function voiceLine(text, from) {
-      const row = document.createElement("div");
-      row.className = "flex " + (from === "caller" ? "justify-start" : "justify-end");
-      const bubble = document.createElement("p");
-      bubble.className =
-        "max-w-[85%] px-4 py-2.5 rounded-xl text-sm " +
-        (from === "caller"
-          ? "rounded-tl-none bg-surface-subtle text-fg-muted"
-          : "rounded-tr-none bg-surface-selected text-fg");
-      bubble.textContent = text;
-      row.appendChild(bubble);
-      row.setAttribute("data-generated", "");
-      return row;
-    }
-
-    const voiceScript = [
-      { from: "caller", text: "Hi, are you open for collection tonight?" },
-      { from: "ai", text: "We are — orders until 10pm. What can I get you?" },
-      { from: "caller", text: "One large pepperoni, please." },
-      { from: "ai", text: "Booked for 8:30pm. I've texted the payment link — see you then!" },
-      { from: "caller", text: "Perfect, thanks." },
-    ];
-
-    const setStatus = (text) => {
-      if (voicePreviewStatus) voicePreviewStatus.textContent = text;
-    };
-    const showDone = (on) => {
-      if (!voicePreviewDone) return;
-      voicePreviewDone.classList.toggle("opacity-0", !on);
-      voicePreviewDone.classList.toggle("opacity-100", on);
-    };
-
-    if (voiceReducedMotion) {
-      voiceScript.forEach((step) => voicePreviewLog.appendChild(voiceLine(step.text, step.from)));
-      setStatus("Call ended — booked in");
-      showDone(true);
-    } else {
-      let seconds = 0;
-      let timer = null;
-      const stopTimer = () => {
-        if (timer) clearInterval(timer);
-        timer = null;
-      };
-      const paintTimer = () => {
-        if (!voicePreviewTimer) return;
-        voicePreviewTimer.textContent =
-          String(Math.floor(seconds / 60)).padStart(2, "0") + ":" + String(seconds % 60).padStart(2, "0");
-      };
-
-      (async function playCall() {
-        while (true) {
-          // new call
-          seconds = 0;
-          paintTimer();
-          showDone(false);
-          voicePreviewLog.querySelectorAll("[data-generated]").forEach((el) => el.remove());
-          setStatus("Caller is speaking…");
-          stopTimer();
-          timer = setInterval(() => {
-            seconds += 1;
-            paintTimer();
-          }, 1000);
-          await wait(1100);
-
-          for (const step of voiceScript) {
-            if (step.from === "ai") {
-              setStatus("AI is responding…");
-              await wait(1300);
-            } else {
-              setStatus("Caller is speaking…");
-              await wait(1000);
-            }
-            voicePreviewLog.appendChild(voiceLine(step.text, step.from));
-            await wait(800);
-          }
-
-          setStatus("Call booked in — nothing missed");
-          showDone(true);
-          await wait(3400);
-          stopTimer();
-          await wait(600);
-        }
-      })();
-    }
-  }
-
   // ===== Animated stats (CountUp.js) =====
   const statsPrefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (window.countUp && !statsPrefersReducedMotion) {
@@ -1698,6 +1751,84 @@
         }
       })();
     }
+  }
+
+  // ===== Hero product carousel =====
+  const heroCarousel = document.getElementById("hero-carousel");
+  if (heroCarousel) {
+    const slides = Array.from(heroCarousel.children);
+    const dotsWrap = document.querySelector("[data-carousel-dots]");
+    const prevBtn = document.querySelector("[data-carousel-prev]");
+    const nextBtn = document.querySelector("[data-carousel-next]");
+
+    function goToSlide(index) {
+      const clamped = Math.max(0, Math.min(slides.length - 1, index));
+      heroCarousel.scrollTo({ left: clamped * heroCarousel.clientWidth, behavior: "smooth" });
+    }
+
+    const activeIndex = () => Math.round(heroCarousel.scrollLeft / Math.max(1, heroCarousel.clientWidth));
+
+    const dots = slides.map((_, index) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", "Go to product " + (index + 1));
+      dot.addEventListener("click", () => goToSlide(index));
+      if (dotsWrap) dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    function paintCarousel() {
+      const active = activeIndex();
+      dots.forEach((dot, index) => {
+        dot.className =
+          "h-1.5 rounded-full transition-all " + (index === active ? "w-6 bg-primary" : "w-3 bg-border");
+        if (index === active) dot.setAttribute("aria-current", "true");
+        else dot.removeAttribute("aria-current");
+      });
+      if (prevBtn) prevBtn.disabled = active === 0;
+      if (nextBtn) nextBtn.disabled = active === slides.length - 1;
+    }
+
+    heroCarousel.addEventListener("scroll", paintCarousel, { passive: true });
+    if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(activeIndex() - 1));
+    if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(activeIndex() + 1));
+    paintCarousel();
+  }
+
+  // ===== Draw the step symbols with Vivus =====
+  const flowSvgs = document.querySelectorAll(".flow-svg");
+  const flowReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (window.Vivus && flowSvgs.length && !flowReducedMotion) {
+    const drawers = new Map();
+    flowSvgs.forEach((svg) => {
+      drawers.set(
+        svg,
+        new Vivus(svg, {
+          type: "oneByOne",
+          duration: 70,
+          start: "manual",
+        })
+      );
+    });
+
+    const drawObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const drawer = drawers.get(entry.target);
+          const siblings = entry.target.closest(".grid")
+            ? [...entry.target.closest(".grid").querySelectorAll(".flow-svg")]
+            : [entry.target];
+          const index = Math.max(0, siblings.indexOf(entry.target));
+          if (drawer) setTimeout(() => drawer.play(), index * 180);
+          drawObserver.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    flowSvgs.forEach((svg) => drawObserver.observe(svg));
   }
 </script>
 
